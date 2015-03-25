@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Resume</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/handlebars.js"></script>
+	<script type="text/javascript" src="js/resume.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script type="text/x-handlebars-template" id="template">
+		<div id="header">
+			<h2>
+				{{name}}
+			</h2>
+			<h3>
+				<div id="links" class="left columns">
+					{{#links}}
+						<a href="{{.}}" target="_blank">{{.}}</a>
+						<br>
+					{{/links}}
+				</div>
+
+				<div id="contact" class="right columns">
+					<a href="tel:{{formatPhone telephone}}">{{telephone}}</a>
+					<br>
+					<a href="mailto:{{email}}">{{email}}</a>
+				</div>
+
+				<div class="clear"></div>
+			</h3>
+		</div>
+		<div id="objective">
+			<h3>Objective</h3>
+			<hr>
+			<div>{{objective}}</div>
+		</div>
+		<div id="education">
+			<h3>Education</h3>
+			<hr>
+			{{#education}}
+				{{> school}}
+			{{/education}}
+		</div>
+		<div id="experience">
+			<h3>Technical Experience</h3>
+			<hr>
+			{{#experience}}
+				{{> experience}}
+			{{/experience}}
+		</div>
+		<div id="skills">
+			<h3>Technical Skills</h3>
+			<hr>
+			<div>
+				{{#skills}}
+					<strong>{{type}}: </strong>
+					{{contents}}
+					<br>
+				{{/skills}}
+			</div>
+		</div>
+		<div id="leadership">
+			<h3>Leadership</h3>
+			<hr>
+			{{#leadership}}
+				{{> experience}}
+			{{/leadership}}
+		</div>
+	</script>
+
+	<script type="text/x-handlebars-template" id="experienceTemplate">
+		<div>
+			<div class="left columns">
+				{{company}}
+				&#8209;
+				<strong>{{position}}</strong>
+				({{location}})
+			</div>
+
+			<div class="right columns">
+				{{shortenDate start.month}} {{shortenDate start.year}}
+				&#8209;
+				{{#end.present}}
+					present
+				{{/end.present}}
+				{{^end.present}}
+					{{shortenDate end.month}} {{shortenDate end.year}}
+				{{/end.present}}
+			</div>
+
+			<div class="clear"></div>
+
+			<ul>
+			{{#detail}}
+				<li>{{.}}</li>
+			{{/detail}}
+			</ul>
+		</div>
+	</script>
+
+	<script type="text/x-handlebars-template" id="schoolTemplate">
+		<div>
+			<div class="left columns">
+				<strong>{{school}}</strong>
+				({{location}})
+
+				{{#degree}}
+					<br>
+					{{^graduation.completed}}
+						Pursuing
+					{{/graduation.completed}}
+					{{level}} of {{type}} in <strong>{{name}}</strong>
+				{{/degree}}
+
+				{{^graduation.completed}}
+					<br>
+					Expected Graduation: <strong>{{graduation.month}} {{graduation.year}}</strong>
+				{{/graduation.completed}}
+
+				{{#honors}}
+					<br>
+					<strong>Honors Program</strong>
+				{{/honors}}
+			</div>
+
+			<div class="right columns">
+				{{shortenDate start.month}} {{shortenDate start.year}}
+				&#8209;
+				{{#end.present}}
+					present
+				{{/end.present}}
+				{{^end.present}}
+					{{shortenDate end.month}} {{shortenDate end.year}}
+				{{/end.present}}
+			</div>
+
+			<div class="clear"></div>
+
+		</div>
+	</script>
+</body>
+</html>
