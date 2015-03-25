@@ -1,3 +1,7 @@
+if ((location.protocol != "https:") && (location.hostname != "127.0.0.1")) {
+    location.protocol = "https:";
+  }
+
 $(document).ready(function() {
 
   // Load JSON file with data
