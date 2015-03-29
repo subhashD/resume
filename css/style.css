@@ -12,6 +12,7 @@ div {
 
 body {
 	width: 99%;
+	min-width: 1000px;
 	margin: 0 auto;
 }
 
