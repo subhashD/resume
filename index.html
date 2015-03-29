@@ -106,24 +106,6 @@
 			<div class="left columns">
 				<strong>{{school}}</strong>
 				({{location}})
-
-				{{#degree}}
-					<br>
-					{{^graduation.completed}}
-						Pursuing
-					{{/graduation.completed}}
-					{{level}} of {{type}} in <strong>{{name}}</strong>
-				{{/degree}}
-
-				{{^graduation.completed}}
-					<br>
-					Expected Graduation: <strong>{{graduation.month}} {{graduation.year}}</strong>
-				{{/graduation.completed}}
-
-				{{#honors}}
-					<br>
-					<strong>Honors Program</strong>
-				{{/honors}}
 			</div>
 
 			<div class="right columns">
@@ -138,6 +120,23 @@
 			</div>
 
 			<div class="clear"></div>
+
+			{{#degree}}
+				{{^graduation.completed}}
+					Pursuing
+				{{/graduation.completed}}
+				{{level}} of {{type}} in <strong>{{name}}</strong>
+				<br>
+			{{/degree}}
+
+			{{^graduation.completed}}
+				Expected Graduation: <strong>{{graduation.month}} {{graduation.year}}</strong>
+				<br>
+			{{/graduation.completed}}
+
+			{{#honors}}
+				<strong>Honors Program</strong>
+			{{/honors}}
 
 		</div>
 	</script>
