@@ -73,14 +73,13 @@
 
 	<script type="text/x-handlebars-template" id="experienceTemplate">
 		<div>
-			<div class="left columns">
-				{{company}}
-				&#8209;
-				<strong>{{position}}</strong>
-				({{location}})
-			</div>
+			{{company}}
+			&#8209;
+			<strong>{{position}}</strong>
+			({{location}})
+			
 
-			<div class="right columns">
+			<div class="right">
 				{{shortenDate start.month}} {{shortenDate start.year}}
 				&#8209;
 				{{#end.present}}
@@ -90,8 +89,6 @@
 					{{shortenDate end.month}} {{shortenDate end.year}}
 				{{/end.present}}
 			</div>
-
-			<div class="clear"></div>
 
 			<ul>
 			{{#detail}}
@@ -103,12 +100,10 @@
 
 	<script type="text/x-handlebars-template" id="schoolTemplate">
 		<div>
-			<div class="left columns">
-				<strong>{{school}}</strong>
-				({{location}})
-			</div>
+			<strong>{{school}}</strong>
+			({{location}})
 
-			<div class="right columns">
+			<div class="right">
 				{{shortenDate start.month}} {{shortenDate start.year}}
 				&#8209;
 				{{#end.present}}
@@ -119,22 +114,21 @@
 				{{/end.present}}
 			</div>
 
-			<div class="clear"></div>
-
 			{{#degree}}
+				<br>
 				{{^graduation.completed}}
 					Pursuing
 				{{/graduation.completed}}
 				{{level}} of {{type}} in <strong>{{name}}</strong>
-				<br>
 			{{/degree}}
 
 			{{^graduation.completed}}
-				Expected Graduation: <strong>{{graduation.month}} {{graduation.year}}</strong>
 				<br>
+				Expected Graduation: <strong>{{graduation.month}} {{graduation.year}}</strong>
 			{{/graduation.completed}}
 
 			{{#honors}}
+				<br>
 				<strong>Honors Program</strong>
 			{{/honors}}
 
