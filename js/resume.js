@@ -1,4 +1,4 @@
-if ((location.protocol != "https:") && (location.hostname != "127.0.0.1")) {
+if ((location.protocol != "https:") && (location.hostname != "resume.dev")) {
     location.protocol = "https:";
   }
 
