@@ -7,259 +7,281 @@
 		"https://linkedin.com/in/fenichelar"
 	],
 
-	"objective" : "Obtain an internship position offering mechanical, electrical, and/or programming experience for Summer 2016.",
-
-	"education" : [
+	"sections" : [
 		{
-			"school" : "Georgia Institute of Technology",
-			"location" : "Atlanta, GA",
-			"start" : {
-				"month" : "June",
-				"year" : 2011
-			},
-			"end" : {
-				"month" : "",
-				"year" : "",
-				"present" : true
-			},
-			"graduation" : {
-				"month" : "May",
-				"year" : 2017,
-				"completed" : false
-			},
-			"gpa" : 2.89,
-			"honors" : true,
-			"degree" : [
+			"title" : "Objective",
+			"type" : "paragraph",
+			"data" : [
+				"Obtain an internship position offering mechanical, electrical, and/or programming experience for Summer 2016."
+			]
+		},
+		{
+			"title" : "Education",
+			"type" : "education",
+			"data" : [
 				{
-					"level" : "Bachelor",
-					"type" : "Science",
-					"name" : "Mechanical Engineering",
-					"completed" : false
-				},
-				{
-					"level" : "Bachelor",
-					"type" : "Science",
-					"name" : "Computer Science",
-					"completed" : false
+					"school" : "Georgia Institute of Technology",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "June",
+						"year" : 2011
+					},
+					"end" : {
+						"month" : "",
+						"year" : "",
+						"present" : true
+					},
+					"graduation" : {
+						"month" : "May",
+						"year" : 2017,
+						"completed" : false
+					},
+					"gpa" : {
+						"value" : 2.89,
+						"show" : false
+					},
+					"honors" : true,
+					"degree" : [
+						{
+							"level" : "Bachelor",
+							"type" : "Science",
+							"name" : "Mechanical Engineering",
+							"completed" : false
+						},
+						{
+							"level" : "Bachelor",
+							"type" : "Science",
+							"name" : "Computer Science",
+							"completed" : false
+						}
+					]
 				}
 			]
-		}
-	],
-
-
-	"skills" : [
+		},
 		{
-			"type" : "Programming",
-			"contents" : [
-				"C",
-				" Java",
-				" MATLAB",
-				" LabVIEW",
-				" JavaScript",
-				" PHP",
-				" SQL",
-				" HTML",
-				" CSS",
-				" Unix shell"
+			"title" : "Technical Experience",
+			"type" : "experience",
+			"data" : [
+				{
+					"company" : "BMW Group",
+					"position" : "R&D Engineer Intern",
+					"location" : "Munich, Germany",
+					"start" : {
+						"month" : "August",
+						"year" : 2014
+					},
+					"end" : {
+						"month" : "December",
+						"year" : 2014,
+						"present" : false
+					},
+					"detail" : [
+						"Worked on small team to develop prototype of future cockpit for automated vehicles and tested in dynamic simulator",
+						"Developed GUI for researchers to monitor and control all electrical and computer systems via UDP using MATLAB",
+						"Created custom PCB board and software systems for recording feedback with force sensitive resistors using C",
+						"Created electrical and software systems for controlling linear actuator with pulse wide modulation using C",
+						"Developed object-oriented Arduino library for fast access to I/O pins with port manipulation using C++"
+					]
+				},
+				{
+					"company" : "Alpha Epsilon Pi Zeta Chapter",
+					"position" : "Webmaster",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "May",
+						"year" : 2014
+					},
+					"end" : {
+						"month" : "December",
+						"year" : 2014,
+						"present" : false
+					},
+					"detail" : [
+						"Developed internal website using Drupal CMS for managing users and internal documents",
+						"Integrated user management system with Georgia Tech’s LDAP database and CAS login servers"
+					]
+				},
+				{
+					"company" : "McKenney’s, Inc.",
+					"position" : "Information Technology Intern ",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "May",
+						"year" : 2014
+					},
+					"end" : {
+						"month" : "August",
+						"year" : 2014,
+						"present" : false
+					},
+					"detail" : [
+						"Diagnosed and resolved technical issues related to hardware and software",
+						"Developed automated system for sharing documents with external clients using HTML, JavaScript, PHP, and batch"
+					]
+				},
+				{
+					"company" : "Georgia Tech IEEE",
+					"position" : "Webmaster",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "August",
+						"year" : 2011
+					},
+					"end" : {
+						"month" : "May",
+						"year" : 2014,
+						"present" : false
+					},
+					"detail" : [
+						"Developed new website using HTML, CSS, JavaScript, and PHP",
+						"Placed in IEEE SoutheastCon Website Competition every year – 1st Place (2014), 1st Place (2013), 3rd Place (2012)"
+					]
+				},
+				{
+					"company" : "General Electric Aviation",
+					"position" : "Software Engineer Intern",
+					"location" : "Cincinnati, OH",
+					"start" : {
+						"month" : "May",
+						"year" : 2012
+					},
+					"end" : {
+						"month" : "August",
+						"year" : 2012,
+						"present" : false
+					},
+					"detail" : [
+						"Developed software for first dual core jet engine controller SCADE qualified C code generator",
+						"Created automated tool for gathering and analyzing licensing server data using Perl, VBA, and batch",
+						"Created project tracking system to quickly identify problematic deadlines using VBA"
+					]
+				},
+				{
+					"company" : "Georgia Tech IEEE",
+					"position" : "Innovation Team Technical Lead",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "August",
+						"year" : 2011
+					},
+					"end" : {
+						"month" : "May",
+						"year" : 2012,
+						"present" : false
+					},
+					"detail" : [
+						"Designed object detection system for competition robot using infrared, ultrasonic, and tactile sensors",
+						"Programmed movement algorithms for advanced line following using BASIC and C"
+					]
+				}
 			]
 		},
 		{
-			"type" : "Software",
-			"contents" : [
-				"Git",
-				" Autodesk AutoCAD",
-				" Autodesk Inventor",
-				" Microsoft Office Suite"
+			"title" : "Technical Skills",
+			"type" : "skills",
+			"data" : [
+				{
+					"type" : "Programming",
+					"contents" : [
+						"C",
+						" Java",
+						" MATLAB",
+						" LabVIEW",
+						" JavaScript",
+						" PHP",
+						" SQL",
+						" HTML",
+						" CSS",
+						" Unix shell"
+					]
+				},
+				{
+					"type" : "Software",
+					"contents" : [
+						"Git",
+						" Autodesk AutoCAD",
+						" Autodesk Inventor",
+						" Microsoft Office Suite"
+					]
+				},
+				{
+					"type" : "Platforms",
+					"contents" : [
+						"Windows XP/Vista/7/8",
+						" Mac OS X",
+						" Ubuntu"
+					]
+				},
+				{
+					"type" : "Manufacturing",
+					"contents" : [
+						"Soldering",
+						" table saw",
+						" miter saw",
+						" band saw",
+						" drill press",
+						" router",
+						" mill",
+						" lathe"
+					]
+				}
 			]
 		},
 		{
-			"type" : "Platforms",
-			"contents" : [
-				"Windows XP/Vista/7/8",
-				" Mac OS X",
-				" Ubuntu"
-			]
-		},
-		{
-			"type" : "Manufacturing",
-			"contents" : [
-				"Soldering",
-				" table saw",
-				" miter saw",
-				" band saw",
-				" drill press",
-				" router",
-				" mill",
-				" lathe"
-			]
-		}
-	],
-
-	"experience" : [
-		{
-			"company" : "BMW Group",
-			"position" : "R&D Engineer Intern",
-			"location" : "Munich, Germany",
-			"start" : {
-				"month" : "August",
-				"year" : 2014
-			},
-			"end" : {
-				"month" : "December",
-				"year" : 2014,
-				"present" : false
-			},
-			"detail" : [
-				"Worked on small team to develop prototype of future cockpit for automated vehicles and tested in dynamic simulator",
-				"Developed GUI for researchers to monitor and control all electrical and computer systems via UDP using MATLAB",
-				"Created custom PCB board and software systems for recording feedback with force sensitive resistors using C",
-				"Created electrical and software systems for controlling linear actuator with pulse wide modulation using C",
-				"Developed object-oriented Arduino library for fast access to I/O pins with port manipulation using C++"
-			]
-		},
-		{
-			"company" : "Alpha Epsilon Pi Zeta Chapter",
-			"position" : "Webmaster",
-			"location" : "Atlanta, GA",
-			"start" : {
-				"month" : "May",
-				"year" : 2014
-			},
-			"end" : {
-				"month" : "December",
-				"year" : 2014,
-				"present" : false
-			},
-			"detail" : [
-				"Developed internal website using Drupal CMS for managing users and internal documents",
-				"Integrated user management system with Georgia Tech’s LDAP database and CAS login servers"
-			]
-		},
-		{
-			"company" : "McKenney’s, Inc.",
-			"position" : "Information Technology Intern ",
-			"location" : "Atlanta, GA",
-			"start" : {
-				"month" : "May",
-				"year" : 2014
-			},
-			"end" : {
-				"month" : "August",
-				"year" : 2014,
-				"present" : false
-			},
-			"detail" : [
-				"Diagnosed and resolved technical issues related to hardware and software",
-				"Developed automated system for sharing documents with external clients using HTML, JavaScript, PHP, and batch"
-			]
-		},
-		{
-			"company" : "Georgia Tech IEEE",
-			"position" : "Webmaster",
-			"location" : "Atlanta, GA",
-			"start" : {
-				"month" : "August",
-				"year" : 2011
-			},
-			"end" : {
-				"month" : "May",
-				"year" : 2014,
-				"present" : false
-			},
-			"detail" : [
-				"Developed new website using HTML, CSS, JavaScript, and PHP",
-				"Placed in IEEE SoutheastCon Website Competition every year – 1st Place (2014), 1st Place (2013), 3rd Place (2012)"
-			]
-		},
-		{
-			"company" : "General Electric Aviation",
-			"position" : "Software Engineer Intern",
-			"location" : "Cincinnati, OH",
-			"start" : {
-				"month" : "May",
-				"year" : 2012
-			},
-			"end" : {
-				"month" : "August",
-				"year" : 2012,
-				"present" : false
-			},
-			"detail" : [
-				"Developed software for first dual core jet engine controller SCADE qualified C code generator",
-				"Created automated tool for gathering and analyzing licensing server data using Perl, VBA, and batch",
-				"Created project tracking system to quickly identify problematic deadlines using VBA"
-			]
-		},
-		{
-			"company" : "Georgia Tech IEEE",
-			"position" : "Innovation Team Technical Lead",
-			"location" : "Atlanta, GA",
-			"start" : {
-				"month" : "August",
-				"year" : 2011
-			},
-			"end" : {
-				"month" : "May",
-				"year" : 2012,
-				"present" : false
-			},
-			"detail" : [
-				"Designed object detection system for competition robot using infrared, ultrasonic, and tactile sensors",
-				"Programmed movement algorithms for advanced line following using BASIC and C"
-			]
-		}
-	],
-
-	"leadership" : [
-		{
-			"company" : "Georgia Tech Housing",
-			"position" : "Harrison Hall Peer Leader",
-			"location" : "Atlanta, GA",
-			"start" : {
-				"month" : "August",
-				"year" : 2012
-			},
-			"end" : {
-				"month" : "December",
-				"year" : 2012,
-				"present" : false
-			},
-			"detail" : [
-				"Worked to facilitate and develop a community environment within freshmen residence halls"
-			]
-		},
-		{
-			"company" : "Georgia Tech",
-			"position" : "Freshman Seminar Team Leader ",
-			"location" : "Atlanta, GA",
-			"start" : {
-				"month" : "August",
-				"year" : 2012
-			},
-			"end" : {
-				"month" : "December",
-				"year" : 2012,
-				"present" : false
-			},
-			"detail" : [
-				"Mentored new students in their transition to college life at Georgia Tech"
-			]
-		},
-		{
-			"company" : "Georgia Tech Housing",
-			"position" : "Folk and Caldwell Treasurer",
-			"location" : "Atlanta, GA",
-			"start" : {
-				"month" : "August",
-				"year" : 2011
-			},
-			"end" : {
-				"month" : "May",
-				"year" : 2012,
-				"present" : false
-			},
-			"detail" : [
-				"Managed finances for Folk and Caldwell residence halls"
+			"title" : "Leadership",
+			"type" : "experience",
+			"data" : [
+				{
+					"company" : "Georgia Tech Housing",
+					"position" : "Harrison Hall Peer Leader",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "August",
+						"year" : 2012
+					},
+					"end" : {
+						"month" : "December",
+						"year" : 2012,
+						"present" : false
+					},
+					"detail" : [
+						"Worked to facilitate and develop a community environment within freshmen residence halls"
+					]
+				},
+				{
+					"company" : "Georgia Tech",
+					"position" : "Freshman Seminar Team Leader ",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "August",
+						"year" : 2012
+					},
+					"end" : {
+						"month" : "December",
+						"year" : 2012,
+						"present" : false
+					},
+					"detail" : [
+						"Mentored new students in their transition to college life at Georgia Tech"
+					]
+				},
+				{
+					"company" : "Georgia Tech Housing",
+					"position" : "Folk and Caldwell Treasurer",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "August",
+						"year" : 2011
+					},
+					"end" : {
+						"month" : "May",
+						"year" : 2012,
+						"present" : false
+					},
+					"detail" : [
+						"Managed finances for Folk and Caldwell residence halls"
+					]
+				}
 			]
 		}
 	]

@@ -32,44 +32,35 @@
 				<div class="clear"></div>
 			</h3>
 		</div>
-		<div id="objective">
-			<h3>Objective</h3>
-			<hr>
-			<div>{{objective}}</div>
-		</div>
-		<div id="education">
-			<h3>Education</h3>
-			<hr>
-			{{#education}}
-				{{> school}}
-			{{/education}}
-		</div>
-		<div id="experience">
-			<h3>Technical Experience</h3>
-			<hr>
-			{{#experience}}
-				{{> experience}}
-			{{/experience}}
-		</div>
-		<div id="skills">
-			<h3>Technical Skills</h3>
-			<hr>
-			<div>
-				{{#skills}}
-					<strong>{{type}}: </strong>
-					{{contents}}
-					<br>
-				{{/skills}}
-			</div>
-		</div>
-		<div id="leadership">
-			<h3>Leadership</h3>
-			<hr>
-			{{#leadership}}
-				{{> experience}}
-			{{/leadership}}
-		</div>
+
+		{{#sections}}
+				<div id="{{type}}">
+					<h3>{{title}}</h3>
+					<hr>
+					{{#compare type "==" "paragraph"}}
+						{{data}}
+					{{/compare}}
+					{{#compare type "==" "education"}}
+						{{#data}}
+							{{> school}}
+						{{/data}}
+					{{/compare}}
+					{{#compare type "==" "experience"}}
+						{{#data}}
+							{{> experience}}
+						{{/data}}
+					{{/compare}}
+					{{#compare type "==" "skills"}}
+						{{#data}}
+							<strong>{{type}}: </strong>
+							{{contents}}
+							<br>
+						{{/data}}
+					{{/compare}}
+				</div>
+		{{/sections}}
 	</script>
+
 
 	<script type="text/x-handlebars-template" id="experienceTemplate">
 		<div>
@@ -126,6 +117,11 @@
 				<br>
 				Expected Graduation: <strong>{{graduation.month}} {{graduation.year}}</strong>
 			{{/graduation.completed}}
+
+			{{#gpa.show}}
+				<br>
+				GPA: <strong>{{gpa.value}}</strong>
+			{{/gpa.show}}
 
 			{{#honors}}
 				<br>
