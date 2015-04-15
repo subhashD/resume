@@ -4,6 +4,9 @@ if ((location.protocol != "https:") && (location.hostname != "resume.dev")) {
 
 $(document).ready(function() {
 
+  // Hide Javascript required notice
+  $("#noJavascript").hide();
+
   // Load JSON file with data
   $.getJSON("resume.json", function(data) {
     // Load template
