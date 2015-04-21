@@ -58,7 +58,9 @@
 					{{#compare type "==" "skills"}}
 						{{#data}}
 							<strong>{{type}}: </strong>
-							{{contents}}
+							{{#contents}}
+								{{this}}{{#unless @last}},{{/unless}}
+							{{/contents}}
 							<br>
 						{{/data}}
 					{{/compare}}

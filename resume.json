@@ -184,45 +184,46 @@
 					"type" : "Programming",
 					"contents" : [
 						"C",
-						" Java",
-						" MATLAB",
-						" LabVIEW",
-						" JavaScript",
-						" PHP",
-						" SQL",
-						" HTML",
-						" CSS",
-						" Unix shell"
+						"Java",
+						"MATLAB",
+						"LabVIEW",
+						"JavaScript",
+						"SQL",
+						"HTML",
+						"CSS",
+						"Unix shell",
+						"VHDL",
+						"assembly"
 					]
 				},
 				{
 					"type" : "Software",
 					"contents" : [
 						"Git",
-						" Autodesk AutoCAD",
-						" Autodesk Inventor",
-						" Microsoft Office Suite"
+						"Autodesk AutoCAD",
+						"Autodesk Inventor",
+						"Microsoft Office Suite"
 					]
 				},
 				{
 					"type" : "Platforms",
 					"contents" : [
 						"Windows XP/Vista/7/8",
-						" Mac OS X",
-						" Ubuntu"
+						"Mac OS X",
+						"Ubuntu"
 					]
 				},
 				{
 					"type" : "Manufacturing",
 					"contents" : [
 						"Soldering",
-						" table saw",
-						" miter saw",
-						" band saw",
-						" drill press",
-						" router",
-						" mill",
-						" lathe"
+						"table saw",
+						"miter saw",
+						"band saw",
+						"drill press",
+						"router",
+						"mill",
+						"lathe"
 					]
 				}
 			]
