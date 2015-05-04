@@ -37,7 +37,7 @@
 						"completed" : false
 					},
 					"gpa" : {
-						"value" : 2.89,
+						"value" : 2.96,
 						"show" : false
 					},
 					"honors" : true,
@@ -232,6 +232,23 @@
 			"title" : "Leadership",
 			"type" : "experience",
 			"data" : [
+				{
+					"company" : "Georgia Tech",
+					"position" : "Creative Decisions and Design Assistant",
+					"location" : "Atlanta, GA",
+					"start" : {
+						"month" : "August",
+						"year" : 2015
+					},
+					"end" : {
+						"month" : "",
+						"year" : "",
+						"present" : true
+					},
+					"detail" : [
+						"Supervised and assisted students using the machine shop for mechanical design projects"
+					]
+				},
 				{
 					"company" : "Georgia Tech Housing",
 					"position" : "Harrison Hall Peer Leader",
