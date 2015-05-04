@@ -104,19 +104,19 @@
 			<div class="right">
 				{{shortenDate start.month}} {{shortenDate start.year}}
 				&#8209;
-				{{#end.present}}
+				{{#graduation.completed}}
+					{{shortenDate graduation.month}} {{shortenDate graduation.year}}
+				{{/graduation.completed}}
+				{{^graduation.completed}}
 					present
-				{{/end.present}}
-				{{^end.present}}
-					{{shortenDate end.month}} {{shortenDate end.year}}
-				{{/end.present}}
+				{{/graduation.completed}}
 			</div>
 
 			{{#degree}}
 				<br>
-				{{^graduation.completed}}
+				{{^../graduation.completed}}
 					Pursuing
-				{{/graduation.completed}}
+				{{/../graduation.completed}}
 				{{level}} of {{type}} in <strong>{{name}}</strong>
 			{{/degree}}
 

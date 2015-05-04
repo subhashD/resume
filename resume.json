@@ -26,11 +26,6 @@
 						"month" : "June",
 						"year" : 2011
 					},
-					"end" : {
-						"month" : "",
-						"year" : "",
-						"present" : true
-					},
 					"graduation" : {
 						"month" : "May",
 						"year" : 2017,
@@ -45,14 +40,12 @@
 						{
 							"level" : "Bachelor",
 							"type" : "Science",
-							"name" : "Mechanical Engineering",
-							"completed" : false
+							"name" : "Mechanical Engineering"
 						},
 						{
 							"level" : "Bachelor",
 							"type" : "Science",
-							"name" : "Computer Science",
-							"completed" : false
+							"name" : "Computer Science"
 						}
 					]
 				}
