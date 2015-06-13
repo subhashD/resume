@@ -6,12 +6,8 @@ a {
 	color: blue;
 }
 
-div {
-	/*font-size: 16px;*/
-}
-
 body {
-	width: 99%;
+	width: 95%;
 	min-width: 1000px;
 	margin: 0 auto;
 }
@@ -20,13 +16,11 @@ h2 {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 5px;
-	/*font-size: 20px;*/
 }
 
 h3 {
 	margin-top: 10px;
 	margin-bottom: 0px;
-	/*font-size: 17px;*/
 }
 
 hr {
@@ -38,10 +32,6 @@ ul {
 	margin-top: 0px;
 	margin-bottom: 5px;
 	padding-left: 20px;
-}
-
-li {
-	/*font-size: 14px;*/
 }
 
 .columns {
