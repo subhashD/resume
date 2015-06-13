@@ -69,10 +69,10 @@
 						"present" : false
 					},
 					"detail" : [
-						"Worked on small team to develop prototype of future cockpit for automated vehicles and tested in dynamic simulator",
-						"Developed GUI for researchers to monitor and control all electrical and computer systems via UDP using MATLAB",
-						"Created custom PCB board and software systems for recording feedback with force sensitive resistors using C",
-						"Created electrical and software systems for controlling linear actuator with pulse wide modulation using C",
+						"Worked on small team to develop and test prototype for use in future cockpit of automated vehicles",
+						"Developed GUI using MATLAB to monitor and control prototype via UDP in real time for dynamic simulator testing",
+						"Created electrical system and software for controlling linear actuator with pulse width modulation using C",
+						"Created custom PCB Arduino shield and software for recording feedback with force sensitive resistors using C",
 						"Developed object-oriented Arduino library for fast access to I/O pins with port manipulation using C++"
 					]
 				},
@@ -90,8 +90,8 @@
 						"present" : false
 					},
 					"detail" : [
-						"Developed internal website using Drupal CMS for managing users and internal documents",
-						"Integrated user management system with Georgia Tech’s LDAP database and CAS login servers"
+						"Developed internal website using Drupal CMS and Pydio for managing users and internal documents",
+						"Integrated Georgia Tech’s LDAP database with user management system and utilized CAS servers for authentication"
 					]
 				},
 				{
@@ -109,7 +109,7 @@
 					},
 					"detail" : [
 						"Diagnosed and resolved technical issues related to hardware and software",
-						"Developed automated system for sharing documents with external clients using HTML, JavaScript, PHP, and batch"
+						"Developed automated system for sharing files with contractors via FTP using HTML, JavaScript, PHP, and batch"
 					]
 				},
 				{
@@ -239,7 +239,7 @@
 						"present" : true
 					},
 					"detail" : [
-						"Supervised and assisted students using the machine shop for mechanical design projects"
+						"Supervise and assist students in the machine design lab and teach LabVIEW programming"
 					]
 				},
 				{
@@ -256,7 +256,7 @@
 						"present" : false
 					},
 					"detail" : [
-						"Worked to facilitate and develop a community environment within freshmen residence halls"
+						"Worked with freshman to facilitate and develop a community environment within Harrison residence halls"
 					]
 				},
 				{
@@ -273,7 +273,7 @@
 						"present" : false
 					},
 					"detail" : [
-						"Mentored new students in their transition to college life at Georgia Tech"
+						"Mentored a group of new students in their transition to college life at Georgia Tech"
 					]
 				},
 				{
@@ -290,7 +290,7 @@
 						"present" : false
 					},
 					"detail" : [
-						"Managed finances for Folk and Caldwell residence halls"
+						"Managed Residence Hall Association budget for Folk and Caldwell residence halls"
 					]
 				}
 			]
