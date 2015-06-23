@@ -2,8 +2,8 @@
 	font-family: "Times New Roman", Times, Serif;
 }
 
-a {
-	color: blue;
+div {
+	font-size: 22px;
 }
 
 body {
@@ -21,6 +21,7 @@ h2 {
 h3 {
 	margin-top: 10px;
 	margin-bottom: 0px;
+	font-size: 23px;
 }
 
 hr {
@@ -32,6 +33,16 @@ ul {
 	margin-top: 0px;
 	margin-bottom: 5px;
 	padding-left: 20px;
+}
+
+li {
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.link {
+	color: blue;
+	font-size: 24px;
 }
 
 .columns {
@@ -54,10 +65,7 @@ ul {
 
 @media print {
 	body {
-		width: 98%;
-		margin-top: -4mm;
-		margin-bottom: -4mm;
-		margin-left: 0mm;
-		margin-right: 0mm;
+		margin-left: 13mm;
+		margin-right: 13mm;
 	}
 }

@@ -27,14 +27,13 @@ $(document).ready(function() {
     var output = Handlebars.compile(template)(data);
 
     // Output result
-    $("body").append(output);
+    $("#resume").append(output);
   })
 
   // Output error status on failure to load JSON
   .fail(function(jqXHR, textStatus, errorThrown) {
     console.log("Error: " + textStatus);
   });
-
 });
 
 // Function for shortening dates (e.g. 2014 -> '14)

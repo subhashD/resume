@@ -4,12 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Resume</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/handlebars.js"></script>
 	<script type="text/javascript" src="js/resume.js"></script>
-	<link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div id="resume">
+	</div>
 	<div id="noJavascript">
 		<p>
 			This page requires Javascript! Please enable it.
@@ -23,7 +25,7 @@
 			<h3>
 				<div id="links" class="left columns">
 					{{#links}}
-						<a href="{{.}}" target="_blank">{{.}}</a>
+						<a href="{{.}}" target="_blank" class="link">{{.}}</a>
 						<br>
 					{{/links}}
 				</div>
