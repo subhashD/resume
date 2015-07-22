@@ -17,12 +17,13 @@
 			This page requires Javascript! Please enable it.
 		</p>
 	</div>
+
 	<script type="text/x-handlebars-template" id="template">
 		<div id="header">
 			<h2>
 				{{name}}
 			</h2>
-			<h3>
+			<h3 id="headerColumns">
 				<div id="links" class="left columns">
 					{{#links}}
 						<a href="{{.}}" target="_blank" class="link">{{.}}</a>
@@ -57,6 +58,11 @@
 							{{> experience}}
 						{{/data}}
 					{{/compare}}
+					{{#compare type "==" "projects"}}
+						{{#data}}
+							{{> project}}
+						{{/data}}
+					{{/compare}}
 					{{#compare type "==" "skills"}}
 						{{#data}}
 							<strong>{{type}}: </strong>
@@ -70,14 +76,37 @@
 		{{/sections}}
 	</script>
 
-
 	<script type="text/x-handlebars-template" id="experienceTemplate">
 		<div>
 			{{company}}
 			&#8209;
 			<strong>{{position}}</strong>
 			({{location}})
-			
+
+			<div class="right">
+				{{shortenDate start.month}} {{shortenDate start.year}}
+				&#8209;
+				{{#end.present}}
+					present
+				{{/end.present}}
+				{{^end.present}}
+					{{shortenDate end.month}} {{shortenDate end.year}}
+				{{/end.present}}
+			</div>
+
+			<ul>
+			{{#detail}}
+				<li>{{.}}</li>
+			{{/detail}}
+			</ul>
+		</div>
+	</script>
+
+	<script type="text/x-handlebars-template" id="projectTemplate">
+		<div>
+			<strong>{{project}}</strong>
+			&#8209;
+			<a href="{{url}}" target="_blank" class="link">{{url}}</a>
 
 			<div class="right">
 				{{shortenDate start.month}} {{shortenDate start.year}}

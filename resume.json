@@ -32,7 +32,6 @@
 						"completed" : false
 					},
 					"gpa" : {
-						"value" : 2.96,
 						"show" : false
 					},
 					"honors" : true,
@@ -72,8 +71,7 @@
 						"Worked on small team to develop and test prototype for use in future cockpit of automated vehicles",
 						"Developed GUI using MATLAB to monitor and control prototype via UDP in real time for dynamic simulator testing",
 						"Created electrical system and software for controlling linear actuator with pulse width modulation using C",
-						"Created custom PCB Arduino shield and software for recording feedback with force sensitive resistors using C",
-						"Developed object-oriented Arduino library for fast access to I/O pins with port manipulation using C++"
+						"Created custom PCB Arduino shield and software for recording feedback with force sensitive resistors using C"
 					]
 				},
 				{
@@ -144,7 +142,7 @@
 						"present" : false
 					},
 					"detail" : [
-						"Developed software for first dual core jet engine controller SCADE qualified C code generator",
+						"Developed software for first dual core jet engine controller using SCADE qualified C code generator",
 						"Created automated tool for gathering and analyzing licensing server data using Perl, VBA, and batch",
 						"Created project tracking system to quickly identify problematic deadlines using VBA"
 					]
@@ -170,7 +168,7 @@
 			]
 		},
 		{
-			"title" : "Technical Skills",
+			"title" : "Skills",
 			"type" : "skills",
 			"data" : [
 				{
@@ -222,7 +220,45 @@
 			]
 		},
 		{
-			"title" : "Leadership",
+			"title" : "Projects",
+			"type" : "projects",
+			"data" : [
+				{
+					"project" : "Resume Generator",
+					"url" : "https://github.com/fenichelar/resume",
+					"start" : {
+						"month" : "March",
+						"year" : 2015
+					},
+					"end" : {
+						"month" : "",
+						"year" : "",
+						"present" : true
+					},
+					"detail" : [
+						"Tool for creating resume by compiling JSON content and HTML layout using JavaScript, jQuery, and Handlebars"
+					]
+				},
+				{
+					"project" : "Arduino Pin Library",
+					"url" : "https://github.com/fenichelar/Pin",
+					"start" : {
+						"month" : "December",
+						"year" : 2014
+					},
+					"end" : {
+						"month" : "",
+						"year" : "",
+						"present" : true
+					},
+					"detail" : [
+						"Arduino library for fast digital I/O using port register manipulation written in C++"
+					]
+				}
+			]
+		},
+		{
+			"title" : "Leadership Experience",
 			"type" : "experience",
 			"data" : [
 				{
@@ -234,12 +270,12 @@
 						"year" : 2015
 					},
 					"end" : {
-						"month" : "",
-						"year" : "",
-						"present" : true
+						"month" : "July",
+						"year" : 2015,
+						"present" : false
 					},
 					"detail" : [
-						"Supervise and assist students in the machine design lab and teach LabVIEW programming"
+						"Supervised and assisted students with machining and LabVIEW programming"
 					]
 				},
 				{
@@ -273,24 +309,7 @@
 						"present" : false
 					},
 					"detail" : [
-						"Mentored a group of new students in their transition to college life at Georgia Tech"
-					]
-				},
-				{
-					"company" : "Georgia Tech Housing",
-					"position" : "Folk and Caldwell Treasurer",
-					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "August",
-						"year" : 2011
-					},
-					"end" : {
-						"month" : "May",
-						"year" : 2012,
-						"present" : false
-					},
-					"detail" : [
-						"Managed Residence Hall Association budget for Folk and Caldwell residence halls"
+						"Mentored group of new students in their transition to college life at Georgia Tech"
 					]
 				}
 			]

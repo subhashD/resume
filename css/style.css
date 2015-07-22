@@ -3,7 +3,7 @@
 }
 
 div {
-	font-size: 22px;
+	font-size: 21px;
 }
 
 body {
@@ -19,13 +19,13 @@ h1 {
 h2 {
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 h3 {
 	margin-top: 10px;
 	margin-bottom: 0px;
-	font-size: 23px;
+	font-size: 22px;
 }
 
 hr {
@@ -40,13 +40,17 @@ ul {
 }
 
 li {
-	font-size: 20px;
+	font-size: 19px;
 	margin-left: 15px;
+}
+
+#links, #contact, #headerColumns {
+	font-size: 22px;
+	margin-top: 0px;
 }
 
 .link {
 	color: blue;
-	font-size: 24px;
 }
 
 .columns {
@@ -65,11 +69,4 @@ li {
 
 .clear {
 	clear: both;
-}
-
-@media print {
-	body {
-		margin-left: 13mm;
-		margin-right: 13mm;
-	}
 }
