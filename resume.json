@@ -266,7 +266,7 @@
 					"position" : "Creative Decisions and Design Assistant",
 					"location" : "Atlanta, GA",
 					"start" : {
-						"month" : "August",
+						"month" : "May",
 						"year" : 2015
 					},
 					"end" : {
@@ -292,12 +292,12 @@
 						"present" : false
 					},
 					"detail" : [
-						"Worked with freshman to facilitate and develop a community environment within Harrison residence halls"
+						"Worked with freshmen to facilitate and develop a community environment within Harrison residence halls"
 					]
 				},
 				{
 					"company" : "Georgia Tech",
-					"position" : "Freshman Seminar Team Leader ",
+					"position" : "Freshman Seminar Team Leader",
 					"location" : "Atlanta, GA",
 					"start" : {
 						"month" : "August",
