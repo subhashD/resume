@@ -145,10 +145,7 @@
 	<script type="text/x-handlebars-template" id="skillTemplate">
 		<strong>{{type}}:</strong>
 		{{#contents}}
-			{{this}}
-			{{#unless @last}}
-				,
-			{{/unless}}
+			{{this}}{{#unless @last}},{{/unless}}
 		{{/contents}}
 		<br>
 	</script>
