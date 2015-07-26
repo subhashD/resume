@@ -44,6 +44,9 @@ $(document).ready(function() {
         $("div").css("fontSize", data.layout.size.paragraph);
         $("li").css("fontSize", data.layout.size.details);
         $("#headerColumns").css("fontSize", data.layout.size.header);
+
+        // Set page title
+        document.title = data.name + " - Resume";
     })
 
     // Output error status on failure to load JSON
