@@ -37,6 +37,13 @@ $(document).ready(function() {
 
         // Output result
         $("#resume").append(output);
+
+        // Set layout
+        $("h2").css("fontSize", data.layout.size.name);
+        $("h3").css("fontSize", data.layout.size.titles);
+        $("div").css("fontSize", data.layout.size.paragraph);
+        $("li").css("fontSize", data.layout.size.details);
+        $("#headerColumns").css("fontSize", data.layout.size.header);
     })
 
     // Output error status on failure to load JSON

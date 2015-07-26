@@ -6,7 +6,28 @@
 		"https://github.com/fenichelar",
 		"https://linkedin.com/in/fenichelar"
 	],
-
+	"layout" : {
+		"size" : {
+			"name" : 30,
+			"header" : 22,
+			"titles" : 22,
+			"paragraph" : 21,
+			"details" : 19
+		},
+		"links" : "left",
+		"contact" : "right",
+		"pdf" : {
+			"source" : "http://resume.dev/Resume.html",
+			"destination" : "Resume.pdf",
+			"size" : "letter",
+			"margins" : {
+				"top" : 8,
+				"bottom" : 5,
+				"left" : 13,
+				"right" : 13
+			}
+		}
+	},
 	"sections" : [
 		{
 			"title" : "Objective",
@@ -41,12 +62,14 @@
 					},
 					"degree" : [
 						{
+							"progress" : "Pursuing",
 							"level" : "Bachelor",
 							"type" : "Science",
 							"name" : "Mechanical Engineering",
 							"concentration" : null
 						},
 						{
+							"progress" : "Pursuing",
 							"level" : "Bachelor",
 							"type" : "Science",
 							"name" : "Computer Science",

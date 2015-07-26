@@ -24,14 +24,14 @@
 				{{name}}
 			</h2>
 			<h3 id="headerColumns">
-				<div id="links" class="left columns">
+				<div id="links" class="{{layout.links}} columns">
 					{{#links}}
 						<a href="{{.}}" target="_blank" class="link">{{.}}</a>
 						<br>
 					{{/links}}
 				</div>
 
-				<div id="contact" class="right columns">
+				<div id="contact" class="{{layout.contact}} columns">
 					<a href="tel:{{formatPhone telephone}}">{{telephone}}</a>
 					<br>
 					<a href="mailto:{{email}}">{{email}}</a>
@@ -159,15 +159,17 @@
 
 			{{#degree}}
 				<br>
-				{{#../dates.present}}
-					Pursuing
-				{{/../dates.present}}
-				{{level}} of {{type}} in <strong>{{name}}</strong>
+				{{progress}} {{level}} of {{type}} in <strong>{{name}}</strong>
 				{{#concentration}}
 					<br>
 					Concentration in <strong>{{.}}</strong>
 				{{/concentration}}
 			{{/degree}}
+
+			{{#gpa}}
+				<br>
+				Overall GPA: <strong>{{formatGPA .}}</strong>
+			{{/gpa}}
 
 			{{#dates.present}}
 				<br>
@@ -186,11 +188,6 @@
 					{{/compare}}
 				{{/compare}}
 			{{/dates.present}}
-
-			{{#gpa}}
-				<br>
-				GPA: <strong>{{formatGPA .}}</strong>
-			{{/gpa}}
 
 			{{#honors.program}}
 				<br>

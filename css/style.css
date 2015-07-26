@@ -2,10 +2,6 @@
 	font-family: "Times New Roman", Times, Serif;
 }
 
-div {
-	font-size: 21px;
-}
-
 body {
 	width: 95%;
 	min-width: 1000px;
@@ -25,7 +21,6 @@ h2 {
 h3 {
 	margin-top: 10px;
 	margin-bottom: 0px;
-	font-size: 22px;
 }
 
 hr {
@@ -40,12 +35,10 @@ ul {
 }
 
 li {
-	font-size: 19px;
 	margin-left: 15px;
 }
 
 #links, #contact, #headerColumns {
-	font-size: 22px;
 	margin-top: 0px;
 }
 
