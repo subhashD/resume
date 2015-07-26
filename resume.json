@@ -22,29 +22,35 @@
 				{
 					"school" : "Georgia Institute of Technology",
 					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "June",
-						"year" : 2011
+					"dates" : {
+						"start" : {
+							"month" : "June",
+							"year" : 2011
+						},
+						"end" : {
+							"month" : "May",
+							"year" : 2017
+						},
+						"present" : true,
+						"alternating" : false
 					},
-					"graduation" : {
-						"month" : "May",
-						"year" : 2017,
-						"completed" : false
+					"gpa" : null,
+					"honors" : {
+						"program" : true,
+						"faculty" : false
 					},
-					"gpa" : {
-						"show" : false
-					},
-					"honors" : true,
 					"degree" : [
 						{
 							"level" : "Bachelor",
 							"type" : "Science",
-							"name" : "Mechanical Engineering"
+							"name" : "Mechanical Engineering",
+							"concentration" : null
 						},
 						{
 							"level" : "Bachelor",
 							"type" : "Science",
-							"name" : "Computer Science"
+							"name" : "Computer Science",
+							"concentration" : null
 						}
 					]
 				}
@@ -58,14 +64,17 @@
 					"company" : "BMW Group",
 					"position" : "R&D Engineer Intern",
 					"location" : "Munich, Germany",
-					"start" : {
-						"month" : "August",
-						"year" : 2014
-					},
-					"end" : {
-						"month" : "December",
-						"year" : 2014,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "August",
+							"year" : 2014
+						},
+						"end" : {
+							"month" : "December",
+							"year" : 2014
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Worked on small team to develop and test prototype for use in future cockpit of automated vehicles",
@@ -78,14 +87,17 @@
 					"company" : "Alpha Epsilon Pi Zeta Chapter",
 					"position" : "Webmaster",
 					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "May",
-						"year" : 2014
-					},
-					"end" : {
-						"month" : "December",
-						"year" : 2014,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "May",
+							"year" : 2014
+						},
+						"end" : {
+							"month" : "December",
+							"year" : 2014
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Developed internal website using Drupal CMS and Pydio for managing users and internal documents",
@@ -96,14 +108,17 @@
 					"company" : "McKenney’s, Inc.",
 					"position" : "Information Technology Intern ",
 					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "May",
-						"year" : 2014
-					},
-					"end" : {
-						"month" : "August",
-						"year" : 2014,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "May",
+							"year" : 2014
+						},
+						"end" : {
+							"month" : "August",
+							"year" : 2014
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Diagnosed and resolved technical issues related to hardware and software",
@@ -114,14 +129,17 @@
 					"company" : "Georgia Tech IEEE",
 					"position" : "Webmaster",
 					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "August",
-						"year" : 2011
-					},
-					"end" : {
-						"month" : "May",
-						"year" : 2014,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "August",
+							"year" : 2011
+						},
+						"end" : {
+							"month" : "May",
+							"year" : 2014
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Developed new website using HTML, CSS, JavaScript, and PHP",
@@ -132,14 +150,17 @@
 					"company" : "General Electric Aviation",
 					"position" : "Software Engineer Intern",
 					"location" : "Cincinnati, OH",
-					"start" : {
-						"month" : "May",
-						"year" : 2012
-					},
-					"end" : {
-						"month" : "August",
-						"year" : 2012,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "May",
+							"year" : 2012
+						},
+						"end" : {
+							"month" : "August",
+							"year" : 2012
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Developed software for first dual core jet engine controller using SCADE qualified C code generator",
@@ -151,14 +172,17 @@
 					"company" : "Georgia Tech IEEE",
 					"position" : "Innovation Team Technical Lead",
 					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "August",
-						"year" : 2011
-					},
-					"end" : {
-						"month" : "May",
-						"year" : 2012,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "August",
+							"year" : 2011
+						},
+						"end" : {
+							"month" : "May",
+							"year" : 2012
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Designed object detection system for competition robot using infrared, ultrasonic, and tactile sensors",
@@ -226,14 +250,17 @@
 				{
 					"project" : "Resume Generator",
 					"url" : "https://github.com/fenichelar/resume",
-					"start" : {
-						"month" : "March",
-						"year" : 2015
-					},
-					"end" : {
-						"month" : "",
-						"year" : "",
-						"present" : true
+					"dates" : {
+						"start" : {
+							"month" : "March",
+							"year" : 2015
+						},
+						"end" : {
+							"month" : "",
+							"year" : ""
+						},
+						"present" : true,
+						"alternating" : false
 					},
 					"detail" : [
 						"Tool for creating resume by compiling JSON content and HTML layout using JavaScript, jQuery, and Handlebars"
@@ -242,14 +269,17 @@
 				{
 					"project" : "Arduino Pin Library",
 					"url" : "https://github.com/fenichelar/Pin",
-					"start" : {
-						"month" : "December",
-						"year" : 2014
-					},
-					"end" : {
-						"month" : "",
-						"year" : "",
-						"present" : true
+					"dates" : {
+						"start" : {
+							"month" : "December",
+							"year" : 2014
+						},
+						"end" : {
+							"month" : "",
+							"year" : ""
+						},
+						"present" : true,
+						"alternating" : false
 					},
 					"detail" : [
 						"Arduino library for fast digital I/O using port register manipulation written in C++"
@@ -265,14 +295,17 @@
 					"company" : "Georgia Tech",
 					"position" : "Creative Decisions and Design Assistant",
 					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "May",
-						"year" : 2015
-					},
-					"end" : {
-						"month" : "July",
-						"year" : 2015,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "May",
+							"year" : 2015
+						},
+						"end" : {
+							"month" : "July",
+							"year" : 2015
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Supervised and assisted students with machining and LabVIEW programming"
@@ -282,14 +315,17 @@
 					"company" : "Georgia Tech Housing",
 					"position" : "Harrison Hall Peer Leader",
 					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "August",
-						"year" : 2012
-					},
-					"end" : {
-						"month" : "December",
-						"year" : 2012,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "August",
+							"year" : 2012
+						},
+						"end" : {
+							"month" : "December",
+							"year" : 2012
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Worked with freshmen to facilitate and develop a community environment within Harrison residence halls"
@@ -299,14 +335,17 @@
 					"company" : "Georgia Tech",
 					"position" : "Freshman Seminar Team Leader",
 					"location" : "Atlanta, GA",
-					"start" : {
-						"month" : "August",
-						"year" : 2012
-					},
-					"end" : {
-						"month" : "December",
-						"year" : 2012,
-						"present" : false
+					"dates" : {
+						"start" : {
+							"month" : "August",
+							"year" : 2012
+						},
+						"end" : {
+							"month" : "December",
+							"year" : 2012
+						},
+						"present" : false,
+						"alternating" : false
 					},
 					"detail" : [
 						"Mentored group of new students in their transition to college life at Georgia Tech"
