@@ -8,20 +8,19 @@
 	],
 	"layout" : {
 		"size" : {
-			"name" : 30,
+			"name" : 34,
 			"header" : 22,
 			"titles" : 22,
 			"paragraph" : 21,
-			"details" : 19
+			"details" : 20
 		},
 		"links" : "left",
 		"contact" : "right",
 		"pdf" : {
-			"source" : "http://resume.dev/Resume.html",
-			"destination" : "Resume.pdf",
+			"source" : "https://resume.fenichelar.com/Resume.html",
 			"size" : "letter",
 			"margins" : {
-				"top" : 8,
+				"top" : 10,
 				"bottom" : 5,
 				"left" : 13,
 				"right" : 13
