@@ -7,19 +7,22 @@
 		"https://linkedin.com/in/fenichelar"
 	],
 	"layout" : {
-		"size" : {
-			"name" : 34,
-			"header" : 22,
-			"titles" : 22,
-			"paragraph" : 21,
-			"details" : 20
+		"html" : {
+			"links" : "left",
+			"contact" : "right",
+			"size" : {
+				"name" : 34,
+				"header" : 22,
+				"titles" : 22,
+				"paragraph" : 21,
+				"details" : 20
+			}
 		},
-		"links" : "left",
-		"contact" : "right",
 		"pdf" : {
 			"source" : "http://localhost/resume/Resume.html",
 			"destination" : "Local.Resume.pdf",
 			"size" : "letter",
+			"dpi" : 96,
 			"margins" : {
 				"top" : 10,
 				"bottom" : 5,

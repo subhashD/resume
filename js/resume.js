@@ -39,11 +39,11 @@ $(document).ready(function() {
         $("#resume").append(output);
 
         // Set layout
-        $("h2").css("fontSize", data.layout.size.name);
-        $("h3").css("fontSize", data.layout.size.titles);
-        $("div").css("fontSize", data.layout.size.paragraph);
-        $("li").css("fontSize", data.layout.size.details);
-        $("#headerColumns").css("fontSize", data.layout.size.header);
+        $("h2").css("fontSize", data.layout.html.size.name);
+        $("h3").css("fontSize", data.layout.html.size.titles);
+        $("div").css("fontSize", data.layout.html.size.paragraph);
+        $("li").css("fontSize", data.layout.html.size.details);
+        $("#headerColumns").css("fontSize", data.layout.html.size.header);
 
         // Set page title
         document.title = data.name + " - Resume";

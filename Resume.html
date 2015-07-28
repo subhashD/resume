@@ -24,14 +24,14 @@
 				{{name}}
 			</h2>
 			<h3 id="headerColumns">
-				<div id="links" class="{{layout.links}} columns">
+				<div id="links" class="{{layout.html.links}} columns">
 					{{#links}}
 						<a href="{{.}}" target="_blank" class="link">{{.}}</a>
 						<br>
 					{{/links}}
 				</div>
 
-				<div id="contact" class="{{layout.contact}} columns">
+				<div id="contact" class="{{layout.html.contact}} columns">
 					<a href="tel:{{formatPhone telephone}}">{{telephone}}</a>
 					<br>
 					<a href="mailto:{{email}}">{{email}}</a>
