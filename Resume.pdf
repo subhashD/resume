@@ -1,19 +1,21 @@
 #!/bin/bash
 
-echo "Content-type: application/pdf"
-echo "Content-disposition: inline"
+USER_NAME=$(cat resume.json | jq -r '.name')
+FILE_NAME="$USER_NAME - Resume.pdf"
+SOURCE_FILE=$(cat resume.json | jq -r '.layout.pdf.source')
+
+PAGE_SIZE=$(cat resume.json | jq -r '.layout.pdf.size')
+
+LEFT_MARGIN=$(cat resume.json | jq '.layout.pdf.margins.left')
+RIGHT_MARGIN=$(cat resume.json | jq '.layout.pdf.margins.right')
+TOP_MARGIN=$(cat resume.json | jq '.layout.pdf.margins.top')
+BOTTOM_MARGIN=$(cat resume.json | jq '.layout.pdf.margins.bottom')
+
+echo "Content-type:application/pdf"
+echo "Content-disposition:inline;filename=$FILE_NAME"
 echo ""
 
-pageSize=$(cat resume.json | jq -r '.layout.pdf.size')
-
-leftMargin=$(cat resume.json | jq '.layout.pdf.margins.left')
-rightMargin=$(cat resume.json | jq '.layout.pdf.margins.right')
-topMargin=$(cat resume.json | jq '.layout.pdf.margins.top')
-bottomMargin=$(cat resume.json | jq '.layout.pdf.margins.bottom')
-
-sourceFile=$(cat resume.json | jq -r '.layout.pdf.source')
-
 wkhtmltopdf -q \
-	--page-size $pageSize \
-	-L $leftMargin -R $rightMargin -T $topMargin -B $bottomMargin \
-	$sourceFile -
+	--page-size $PAGE_SIZE \
+	-L $LEFT_MARGIN -R $RIGHT_MARGIN -T $TOP_MARGIN -B $BOTTOM_MARGIN \
+	$SOURCE_FILE -
