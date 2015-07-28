@@ -17,8 +17,7 @@
 		"links" : "left",
 		"contact" : "right",
 		"pdf" : {
-			"source" : "http://resume.dev/Resume.html",
-			"server" : "https://resume.fenichelar.com/Resume.html",
+			"source" : "http://localhost/resume/Resume.html",
 			"destination" : "Local.Resume.pdf",
 			"size" : "letter",
 			"margins" : {

@@ -12,11 +12,10 @@ DESTINATION_FILE=$(cat resume.json | jq -r '.layout.pdf.destination')
 
 ARGUMENTS=""
 
-if [[ $* == *--server* ]]
+if [ "$1" = "--server" ]
 	then
 		USER_NAME=$(cat resume.json | jq -r '.name')
 		FILE_NAME="$USER_NAME - Resume.pdf"
-		SOURCE_FILE=$(cat resume.json | jq -r '.layout.pdf.server')
 		DESTINATION_FILE="-"
 		ARGUMENTS="-q"
 		echo "Content-type:application/pdf"
