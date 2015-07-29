@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<title>Resume</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/handlebars.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
 	<script type="text/javascript" src="js/resume.js"></script>
 </head>
 <body>
@@ -79,18 +79,17 @@
 
 	<script type="text/x-handlebars-template" id="dateTemplate">
 		<div class="right">
-				{{#alternating}}
+				{{#if alternating}}
 					(alternating semesters)
-				{{/alternating}}
+				{{/if}}
 
 				{{shortenDate start.month}} {{shortenDate start.year}}
 				&#8209;
-				{{#present}}
+				{{#if present}}
 					present
-				{{/present}}
-				{{^present}}
+				{{else}}
 					{{shortenDate end.month}} {{shortenDate end.year}}
-				{{/present}}
+				{{/if}}
 		</div>
 	</script>
 
@@ -160,44 +159,42 @@
 			{{#degree}}
 				<br>
 				{{progress}} {{level}} of {{type}} in <strong>{{name}}</strong>
-				{{#concentration}}
+				{{#if concentration}}
 					<br>
-					Concentration in <strong>{{.}}</strong>
-				{{/concentration}}
+					Concentration in <strong>{{concentration}}</strong>
+				{{/if}}
 			{{/degree}}
 
-			{{#gpa}}
+			{{#if gpa}}
 				<br>
-				Overall GPA: <strong>{{formatGPA .}}</strong>
-			{{/gpa}}
+				Overall GPA: <strong>{{formatGPA gpa}}</strong>
+			{{/if}}
 
-			{{#dates.present}}
+			{{#if dates.present}}
 				<br>
 				Expected Graduation: <strong>{{dates.end.month}} {{dates.end.year}}</strong>
-				{{#compare gpa ">=" 3.15}}
+				{{#compare gpa ">=" 3.55}}
+					with <strong>Highest Honors</strong>
+				{{else}}
 					{{#compare gpa ">=" 3.35}}
-						{{#compare gpa ">=" 3.55}}
-							with <strong>Highest Honors</strong>
+						with <strong>High Honors</strong>
+					{{else}}
+						{{#compare gpa ">=" 3.15}}
+							with <strong>Honors</strong>
 						{{/compare}}
-						{{#compare gpa "<" 3.55}}
-							with <strong>High Honors</strong>
-						{{/compare}}
-					{{/compare}}
-					{{#compare gpa "<" 3.35}}
-						with <strong>Honors</strong>
 					{{/compare}}
 				{{/compare}}
-			{{/dates.present}}
+			{{/if}}
 
-			{{#honors.program}}
+			{{#if honors.program}}
 				<br>
 				<strong>Honors Program</strong>
-			{{/honors.program}}
+			{{/if}}
 
-			{{#honors.faculty}}
+			{{#if honors.faculty}}
 				<br>
 				<strong>Faculty Honors</strong>
-			{{/honors.faculty}}
+			{{/if}}
 
 		{{#unless @last}}<br><br>{{/unless}}
 		</div>
