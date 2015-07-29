@@ -16,7 +16,7 @@ BOTTOM_MARGIN=$(echo $LAYOUT_PDF | jq -r '.margins.bottom')
 SOURCE_FILE=$(echo $LAYOUT_PDF | jq -r '.source')
 DESTINATION_FILE=$(echo $LAYOUT_PDF | jq -r '.destination')
 
-OUTPUT_PDF="wkhtmltopdf -q
+PDF_COMMAND="wkhtmltopdf -q
 	--dpi $DPI
 	--page-size $PAGE_SIZE
 	-L $LEFT_MARGIN -R $RIGHT_MARGIN -T $TOP_MARGIN -B $BOTTOM_MARGIN
@@ -25,13 +25,14 @@ OUTPUT_PDF="wkhtmltopdf -q
 
 if [ "$1" = "--server" ]
 	then
+		OUTPUT_PDF=$($PDF_COMMAND)
 		echo "Content-type:application/pdf"
 		echo "Content-disposition:inline;filename=$USER_NAME - Resume.pdf"
 		echo ""
-		echo $($OUTPUT_PDF)
+		echo $OUTPUT_PDF
 	else
 		echo "Source: $SOURCE_FILE"
 		echo "Destination: $DESTINATION_FILE"
-		$($OUTPUT_PDF > $DESTINATION_FILE)
+		$($PDF_COMMAND > $DESTINATION_FILE)
 		echo "Done"
 fi
