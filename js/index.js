@@ -8,7 +8,7 @@ $(document).ready(function() {
     $("#noJavascript").hide();
 
     // Load JSON file with data
-    $.getJSON("resume.json", function(data) {
+    $.getJSON("data/resume.json", function(data) {
         // Load template
         var template = $("#template").html();
 

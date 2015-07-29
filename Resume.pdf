@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bash createPDF.sh --server
+bash data/createPDF.sh --server

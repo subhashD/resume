@@ -20,7 +20,6 @@
 		},
 		"pdf" : {
 			"source" : "http://localhost/resume/Resume.html",
-			"destination" : "Local.Resume.pdf",
 			"size" : "letter",
 			"dpi" : 96,
 			"margins" : {
