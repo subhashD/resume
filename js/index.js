@@ -27,6 +27,10 @@ $(document).ready(function() {
 
             ga('create', data.analytics, 'auto');
             ga('send', 'pageview');
+
+            $('a').on('click', function() {
+                ga('send', 'event', 'click', this.href);
+            });
         }
     })
 
