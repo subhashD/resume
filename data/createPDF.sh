@@ -1,5 +1,11 @@
 #!/bin/bash
 
+BIN_PATH="/usr/local/bin/"
+if [ -d "$BIN_PATH" ]
+	then
+		export PATH=$BIN_PATH:$PATH
+fi
+
 SCRIPT_PATH=$(cd "$(dirname "$0")" && pwd)
 JSON_CONTENT=$(cat $SCRIPT_PATH/resume.json)
 
