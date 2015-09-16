@@ -12,11 +12,11 @@
 			"links" : "left",
 			"contact" : "right",
 			"size" : {
-				"name" : 34,
+				"name" : 30,
 				"header" : 22,
-				"titles" : 22,
-				"paragraph" : 21,
-				"details" : 20
+				"titles" : 21,
+				"paragraph" : 20,
+				"details" : 19
 			}
 		},
 		"pdf" : {
@@ -24,7 +24,7 @@
 			"size" : "letter",
 			"dpi" : 96,
 			"margins" : {
-				"top" : 10,
+				"top" : 7,
 				"bottom" : 5,
 				"left" : 13,
 				"right" : 13
@@ -86,6 +86,26 @@
 			"title" : "Technical Experience",
 			"type" : "experience",
 			"data" : [
+				{
+					"company" : "TransNexus",
+					"position" : "Software Developer",
+					"location" : "Atlanta, GA",
+					"dates" : {
+						"start" : {
+							"month" : "September",
+							"year" : 2015
+						},
+						"end" : {
+							"month" : "",
+							"year" : ""
+						},
+						"present" : true,
+						"alternating" : false
+					},
+					"detail" : [
+						"Developing a web application in HTML, CSS, and JavaScript to replace existing Java applets"
+					]
+				},
 				{
 					"company" : "BMW Group",
 					"position" : "R&D Engineer Intern",
@@ -274,6 +294,25 @@
 			"type" : "projects",
 			"data" : [
 				{
+					"project" : "GitHub Webhook Script",
+					"url" : "https://github.com/fenichelar/webhook",
+					"dates" : {
+						"start" : {
+							"month" : "August",
+							"year" : 2015
+						},
+						"end" : {
+							"month" : "",
+							"year" : ""
+						},
+						"present" : true,
+						"alternating" : false
+					},
+					"detail" : [
+						"Python CGI script for executing shell commands triggered by GitHub webhooks"
+					]
+				},
+				{
 					"project" : "Resume Generator",
 					"url" : "https://github.com/fenichelar/resume",
 					"dates" : {
@@ -301,10 +340,10 @@
 							"year" : 2014
 						},
 						"end" : {
-							"month" : "",
-							"year" : ""
+							"month" : "August",
+							"year" : 2015
 						},
-						"present" : true,
+						"present" : false,
 						"alternating" : false
 					},
 					"detail" : [
