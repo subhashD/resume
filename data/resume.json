@@ -125,8 +125,8 @@
 					"detail" : [
 						"Worked on small team to develop and test prototype for use in future cockpit of automated vehicles",
 						"Developed GUI using MATLAB to monitor and control prototype via UDP in real time for dynamic simulator testing",
-						"Created electrical system and software for controlling linear actuator with pulse width modulation using C",
-						"Created custom PCB Arduino shield and software for recording feedback with force sensitive resistors using C"
+						"Created electrical system and software for controlling linear actuator with pulse width modulation using C++",
+						"Created custom PCB Arduino shield and software for recording feedback with force sensitive resistors using C++"
 					]
 				},
 				{
@@ -244,7 +244,7 @@
 				{
 					"type" : "Programming",
 					"contents" : [
-						"C",
+						"C/C++",
 						"Java",
 						"MATLAB",
 						"LabVIEW",
