@@ -1,8 +1,5 @@
-* {
-	font-family: "Times New Roman", Times, Serif;
-}
-
 body {
+	font-family: "Times New Roman", Times, Serif;
 	width: 95%;
 	min-width: 1000px;
 	margin: 0 auto;
@@ -15,12 +12,12 @@ h1 {
 h2 {
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 h3 {
 	margin-top: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 hr {
@@ -29,7 +26,7 @@ hr {
 }
 
 ul {
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 5px;
 	padding-left: 20px;
 }
@@ -38,27 +35,37 @@ li {
 	margin-left: 15px;
 }
 
-#links, #contact, #headerColumns {
-	margin-top: 0px;
-	margin-bottom: 2px;
+.header {
+	margin-top: 0;
+	margin-bottom: 0;
+	display: block;
 }
 
-.link {
-	color: blue;
-}
-
-.columns {
+.sections {
+	padding-top: 2px;
 	display: block;
 }
 
 .left {
 	float: left;
 	text-align: left;
+	width:33.33%;
+}
+
+.center {
+	float: left;
+	text-align: center;
+	width:33.33%;
 }
 
 .right {
 	float: right;
 	text-align: right;
+	width:33.33%;
+}
+
+.link {
+	color: blue;
 }
 
 .clear {

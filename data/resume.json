@@ -1,7 +1,7 @@
 {
 	"name" : "Alec Ross Fenichel",
 	"telephone" : "+1 (407) 760-0036",
-	"email" : "fenichelar@gatech.edu",
+	"email" : "alec.fenichel@gmail.com",
 	"links" : [
 		"https://github.com/fenichelar",
 		"https://linkedin.com/in/fenichelar"
@@ -9,14 +9,12 @@
 	"analytics" : "UA-65359312-3",
 	"layout" : {
 		"html" : {
-			"links" : "left",
-			"contact" : "right",
 			"size" : {
 				"name" : 30,
-				"header" : 22,
-				"titles" : 21,
-				"paragraph" : 20,
-				"details" : 19
+				"header" : 21,
+				"titles" : 20,
+				"paragraph" : 19,
+				"details" : 18
 			}
 		},
 		"pdf" : {
@@ -36,7 +34,7 @@
 			"title" : "Objective",
 			"type" : "paragraph",
 			"data" : [
-				"Obtain an internship position offering mechanical, electrical, and/or programming experience for Summer 2016."
+				"Obtain a full-time position offering mechanical, electrical, and/or programming experience starting January 2017."
 			]
 		},
 		{
@@ -52,8 +50,8 @@
 							"year" : 2011
 						},
 						"end" : {
-							"month" : "May",
-							"year" : 2017
+							"month" : "December",
+							"year" : 2016
 						},
 						"present" : true,
 						"alternating" : false
@@ -103,7 +101,7 @@
 						"alternating" : false
 					},
 					"detail" : [
-						"Developing a web application in HTML, CSS, and JavaScript to replace existing Java applets"
+						"Developing a web application for managing VoIP services using JavaScript, Ember.js, Sails.js, Node.js, jQuery, and Bootstrap"
 					]
 				},
 				{
@@ -242,25 +240,38 @@
 			"type" : "skills",
 			"data" : [
 				{
-					"type" : "Programming",
+					"type" : "Programming Languages",
 					"contents" : [
 						"C/C++",
 						"Java",
 						"MATLAB",
 						"LabVIEW",
-						"JavaScript",
-						"SQL",
-						"HTML",
-						"CSS",
 						"Unix shell",
 						"VHDL",
 						"assembly"
 					]
 				},
 				{
+					"type" : "Web Development",
+					"contents" : [
+						"JavaScript",
+						"HTML",
+						"CSS",
+						"Node.js",
+						"Ember.js",
+						"Sails.js",
+						"Handlebars",
+						"jQuery",
+						"Bootstrap",
+						"MongoDB",
+						"MySQL"
+					]
+				},
+				{
 					"type" : "Software",
 					"contents" : [
 						"Git",
+						"Vim",
 						"Autodesk AutoCAD",
 						"Autodesk Inventor",
 						"Microsoft Office Suite"
@@ -269,9 +280,10 @@
 				{
 					"type" : "Platforms",
 					"contents" : [
-						"Windows XP/Vista/7/8",
-						"Mac OS X",
-						"Ubuntu"
+						"Windows",
+						"Mac OS",
+						"Ubuntu",
+						"CentOS"
 					]
 				},
 				{
@@ -294,8 +306,8 @@
 			"type" : "projects",
 			"data" : [
 				{
-					"project" : "GitHub Webhook Script",
-					"url" : "https://github.com/fenichelar/webhook",
+					"project" : "GTFriender",
+					"url" : "https://developer.gtfriender.com/",
 					"dates" : {
 						"start" : {
 							"month" : "August",
@@ -309,7 +321,7 @@
 						"alternating" : false
 					},
 					"detail" : [
-						"Python CGI script for executing shell commands triggered by GitHub webhooks"
+						"Web application for scheduling events written in JavaScript using Ember.js, Sails.js, Node.js, jQuery, Bootstrap, and MongoDB"
 					]
 				},
 				{
@@ -321,14 +333,33 @@
 							"year" : 2015
 						},
 						"end" : {
-							"month" : "",
-							"year" : ""
+							"month" : "December",
+							"year" : 2015
 						},
-						"present" : true,
+						"present" : false,
 						"alternating" : false
 					},
 					"detail" : [
-						"Tool for creating resume by compiling JSON content and HTML layout using JavaScript, jQuery, and Handlebars"
+						"Tool for creating resume by compiling JSON content and HTML layout written in JavaScript using jQuery and Handlebars"
+					]
+				},
+				{
+					"project" : "GitHub Webhook Script",
+					"url" : "https://github.com/fenichelar/webhook",
+					"dates" : {
+						"start" : {
+							"month" : "July",
+							"year" : 2015
+						},
+						"end" : {
+							"month" : "August",
+							"year" : 2015
+						},
+						"present" : false,
+						"alternating" : false
+					},
+					"detail" : [
+						"Python CGI script for executing shell commands triggered by GitHub webhooks"
 					]
 				},
 				{

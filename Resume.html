@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Resume</title>
@@ -9,9 +10,9 @@
 	<script type="text/javascript" src="js/handlebars.min.js"></script>
 	<script type="text/javascript" src="js/resume.js"></script>
 </head>
+
 <body>
-	<div id="resume">
-	</div>
+	<div id="resume"></div>
 	<div id="noJavascript">
 		<p>
 			This page requires Javascript! Please enable it.
@@ -19,29 +20,33 @@
 	</div>
 
 	<script type="text/x-handlebars-template" id="template">
-		<div id="header">
-			<h2>
-				{{name}}
-			</h2>
-			<h3 id="headerColumns">
-				<div id="links" class="{{layout.html.links}} columns">
+		<div class="header">
+			<div id="links" class="left">
+				<h3>
 					{{#links}}
 						<a href="{{.}}" target="_blank" class="link">{{.}}</a>
 						<br>
 					{{/links}}
-				</div>
+				</h3>
+			</div>
 
-				<div id="contact" class="{{layout.html.contact}} columns">
+			<div id="name" class="center">
+				<h2>
+					{{name}}
+				</h2>
+			</div>
+
+			<div id="contact" class="right">
+				<h3>
 					<a href="tel:{{formatPhone telephone}}">{{telephone}}</a>
 					<br>
 					<a href="mailto:{{email}}">{{email}}</a>
-				</div>
-
-				<div class="clear"></div>
-			</h3>
+				</h3>
+			</div>
 		</div>
 
-		{{#sections}}
+		<div class="sections clear">
+			{{#sections}}
 				<div id="{{type}}">
 					<h3>{{title}}</h3>
 					<hr>
@@ -74,38 +79,35 @@
 						{{/data}}
 					{{/compare}}
 				</div>
-		{{/sections}}
+			{{/sections}}
+		</div>
 	</script>
 
 	<script type="text/x-handlebars-template" id="dateTemplate">
 		<div class="right">
-				{{#if alternating}}
-					(alternating semesters)
-				{{/if}}
+			{{#if alternating}}
+				(alternating semesters)
+			{{/if}}
 
-				{{shortenDate start.month}} {{shortenDate start.year}}
-				&#8209;
-				{{#if present}}
-					present
-				{{else}}
-					{{shortenDate end.month}} {{shortenDate end.year}}
-				{{/if}}
+			{{shortenDate start.month}} {{shortenDate start.year}} &#8209;
+			{{#if present}}
+				present
+			{{else}}
+				{{shortenDate end.month}} {{shortenDate end.year}}
+			{{/if}}
 		</div>
 	</script>
 
 	<script type="text/x-handlebars-template" id="experienceTemplate">
 		<div>
-			{{company}}
-			&#8209;
+			{{company}} &#8209;
 			<strong>{{position}}</strong>
-			({{location}})
-
-			{{> date dates}}
+			({{location}}) {{> date dates}}
 
 			<ul>
-			{{#detail}}
-				<li>{{.}}</li>
-			{{/detail}}
+				{{#detail}}
+					<li>{{.}}</li>
+				{{/detail}}
 			</ul>
 		</div>
 	</script>
@@ -113,14 +115,12 @@
 	<script type="text/x-handlebars-template" id="organizationTemplate">
 		<div>
 			<strong>{{organization}}</strong>
-			({{location}})
-
-			{{> date dates}}
+			({{location}}) {{> date dates}}
 
 			<ul>
-			{{#detail}}
-				<li>{{.}}</li>
-			{{/detail}}
+				{{#detail}}
+					<li>{{.}}</li>
+				{{/detail}}
 			</ul>
 		</div>
 	</script>
@@ -129,14 +129,12 @@
 		<div>
 			<strong>{{project}}</strong>
 			&#8209;
-			<a href="{{url}}" target="_blank" class="link">{{url}}</a>
-
-			{{> date dates}}
+			<a href="{{url}}" target="_blank" class="link">{{url}}</a> {{> date dates}}
 
 			<ul>
-			{{#detail}}
-				<li>{{.}}</li>
-			{{/detail}}
+				{{#detail}}
+					<li>{{.}}</li>
+				{{/detail}}
 			</ul>
 		</div>
 	</script>
@@ -152,37 +150,38 @@
 	<script type="text/x-handlebars-template" id="schoolTemplate">
 		<div>
 			<strong>{{school}}</strong>
-			({{location}})
-
-			{{> date dates}}
+			({{location}}) {{> date dates}}
 
 			{{#degree}}
-				<br>
-				{{progress}} {{level}} of {{type}} in <strong>{{name}}</strong>
+				<br> {{progress}} {{level}} of {{type}} in
+				<strong>{{name}}</strong>
 				{{#if concentration}}
-					<br>
-					Concentration in <strong>{{concentration}}</strong>
+					<br> Concentration in
+					<strong>{{concentration}}</strong>
 				{{/if}}
 			{{/degree}}
 
 			{{#if gpa}}
-				<br>
-				Overall GPA: <strong>{{formatGPA gpa}}</strong>
+				<br> Overall GPA:
+				<strong>{{formatGPA gpa}}</strong>
 			{{/if}}
 
 			{{#if dates.present}}
-				<br>
-				Expected Graduation: <strong>{{dates.end.month}} {{dates.end.year}}</strong>
+				<br> Expected Graduation:
+				<strong>{{dates.end.month}} {{dates.end.year}}</strong>
 				{{#compare gpa ">=" 3.55}}
-					with <strong>Highest Honors</strong>
-				{{else}}
-					{{#compare gpa ">=" 3.35}}
-						with <strong>High Honors</strong>
-					{{else}}
-						{{#compare gpa ">=" 3.15}}
-							with <strong>Honors</strong>
-						{{/compare}}
-					{{/compare}}
+					with
+					<strong>Highest Honors</strong>
+			{{else}}
+				{{#compare gpa ">=" 3.35}}
+					with
+					<strong>High Honors</strong>
+			{{else}}
+				{{#compare gpa ">=" 3.15}}
+					with
+					<strong>Honors</strong>
+				{{/compare}}
+				{{/compare}}
 				{{/compare}}
 			{{/if}}
 
@@ -196,8 +195,12 @@
 				<strong>Faculty Honors</strong>
 			{{/if}}
 
-		{{#unless @last}}<br><br>{{/unless}}
+			{{#unless @last}}
+				<br>
+				<br>
+			{{/unless}}
 		</div>
 	</script>
 </body>
+
 </html>
