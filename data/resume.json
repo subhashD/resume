@@ -243,6 +243,7 @@
 					"type" : "Programming Languages",
 					"contents" : [
 						"C/C++",
+						"Python",
 						"Java",
 						"MATLAB",
 						"LabVIEW",
