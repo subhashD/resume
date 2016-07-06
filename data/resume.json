@@ -67,14 +67,14 @@
 							"level" : "Bachelor",
 							"type" : "Science",
 							"name" : "Mechanical Engineering",
-							"concentration" : null
+							"concentrations" : []
 						},
 						{
 							"progress" : "Pursuing",
 							"level" : "Bachelor",
 							"type" : "Science",
 							"name" : "Computer Science",
-							"concentration" : null
+							"concentrations" : ["Devices", "Intelligence"]
 						}
 					]
 				}

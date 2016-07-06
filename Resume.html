@@ -155,9 +155,14 @@
 			{{#degree}}
 				<br> {{progress}} {{level}} of {{type}} in
 				<strong>{{name}}</strong>
-				{{#if concentration}}
-					<br> Concentration in
-					<strong>{{concentration}}</strong>
+				{{#if concentrations}}
+					concentrating in
+					{{#concentrations}}
+						<strong>{{this}}</strong>
+						{{#unless @last}}
+							and
+						{{/unless}}
+					{{/concentrations}}
 				{{/if}}
 			{{/degree}}
 
