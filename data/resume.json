@@ -307,6 +307,25 @@
 			"type" : "projects",
 			"data" : [
 				{
+					"project" : "Arduino Pin Library",
+					"url" : "https://github.com/fenichelar/Pin",
+					"dates" : {
+						"start" : {
+							"month" : "December",
+							"year" : 2014
+						},
+						"end" : {
+							"month" : "",
+							"year" : null
+						},
+						"present" : true,
+						"alternating" : false
+					},
+					"detail" : [
+						"Arduino library for fast digital I/O using port register manipulation written in C++"
+					]
+				},
+				{
 					"project" : "GTFriender",
 					"url" : "https://github.com/fenichelar/GTFriender",
 					"dates" : {
@@ -361,25 +380,6 @@
 					},
 					"detail" : [
 						"Python CGI script for executing shell commands triggered by GitHub webhooks"
-					]
-				},
-				{
-					"project" : "Arduino Pin Library",
-					"url" : "https://github.com/fenichelar/Pin",
-					"dates" : {
-						"start" : {
-							"month" : "December",
-							"year" : 2014
-						},
-						"end" : {
-							"month" : "August",
-							"year" : 2015
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Arduino library for fast digital I/O using port register manipulation written in C++"
 					]
 				}
 			]
