@@ -322,7 +322,7 @@
 						"alternating" : false
 					},
 					"detail" : [
-						"Arduino library for fast digital I/O using port register manipulation written in C++"
+						"Arduino library for fast and simultaneous operations to Arduino I/O pins using port manipulation written in C++"
 					]
 				},
 				{
