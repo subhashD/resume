@@ -326,6 +326,25 @@
 					]
 				},
 				{
+					"project" : "Too Many Lasers",
+					"url" : "https://github.com/fenichelar/Too-Many-Lasers",
+					"dates" : {
+						"start" : {
+							"month" : "June",
+							"year" : 2016
+						},
+						"end" : {
+							"month" : "August",
+							"year" : 2016
+						},
+						"present" : false,
+						"alternating" : false
+					},
+					"detail" : [
+						"HTML5 space game written in TypeScript using Phaser"
+					]
+				},
+				{
 					"project" : "GTFriender",
 					"url" : "https://github.com/fenichelar/GTFriender",
 					"dates" : {
@@ -361,25 +380,6 @@
 					},
 					"detail" : [
 						"Tool for creating resume by compiling JSON content and HTML layout written in JavaScript using jQuery and Handlebars"
-					]
-				},
-				{
-					"project" : "GitHub Webhook Script",
-					"url" : "https://github.com/fenichelar/webhook",
-					"dates" : {
-						"start" : {
-							"month" : "July",
-							"year" : 2015
-						},
-						"end" : {
-							"month" : "August",
-							"year" : 2015
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Python CGI script for executing shell commands triggered by GitHub webhooks"
 					]
 				}
 			]
