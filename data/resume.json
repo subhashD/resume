@@ -246,9 +246,7 @@
 						"Python",
 						"Java",
 						"MATLAB",
-						"LabVIEW",
 						"Unix shell",
-						"VHDL",
 						"assembly"
 					]
 				},
@@ -262,20 +260,7 @@
 						"Ember.js",
 						"Sails.js",
 						"Handlebars",
-						"jQuery",
-						"Bootstrap",
-						"MongoDB",
-						"MySQL"
-					]
-				},
-				{
-					"type" : "Software",
-					"contents" : [
-						"Git",
-						"Vim",
-						"Autodesk AutoCAD",
-						"Autodesk Inventor",
-						"Microsoft Office Suite"
+						"jQuery"
 					]
 				},
 				{
@@ -283,8 +268,7 @@
 					"contents" : [
 						"Windows",
 						"Mac OS",
-						"Ubuntu",
-						"CentOS"
+						"Ubuntu"
 					]
 				},
 				{
