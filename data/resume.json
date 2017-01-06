@@ -34,7 +34,7 @@
 			"title" : "Summary",
 			"type" : "paragraph",
 			"data" : [
-				"I am a rapid prototyper with mechanical, electrical, and programming experience. My passion is automation and robotics. I also have substantial experience with web development. I am looking for a full-time position starting in early 2017."
+				"I am a rapid prototyper with mechanical, electrical, and programming experience. My passion is automation and robotics. I also have substantial experience with web development."
 			]
 		},
 		{
@@ -53,12 +53,12 @@
 							"month" : "December",
 							"year" : 2016
 						},
-						"present" : true,
+						"present" : false,
 						"alternating" : false
 					},
 					"gpa" : null,
 					"honors" : {
-						"program" : true,
+						"program" : false,
 						"faculty" : false
 					},
 					"degree" : [
@@ -101,7 +101,7 @@
 						"alternating" : false
 					},
 					"detail" : [
-						"Developing a web application for managing VoIP services using JavaScript, Ember.js, Sails.js, Node.js, jQuery, and Bootstrap"
+						"Developing web application for managing VoIP services using JavaScript, Ember.js, Sails.js, Node.js, jQuery, and Bootstrap"
 					]
 				},
 				{

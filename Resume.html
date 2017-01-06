@@ -153,7 +153,7 @@
 			({{location}}) {{> date dates}}
 
 			{{#degree}}
-				<br> {{progress}} {{level}} of {{type}} in
+				<br> {{#if present}}{{progress}}{{/if}} {{level}} of {{type}} in
 				<strong>{{name}}</strong>
 				{{#if concentrations}}
 					concentrating in
