@@ -20,6 +20,19 @@ function formatPhone(input) {
     return input;
 }
 
+function renderDetail(input) {
+    if (typeof input === "object") {
+      var details = input.summary + "<ul>";
+      for (var i = 0; i < input.details.length; i ++) {
+        details += "<li>" + input.details[i] + "</li>";
+      }
+      details += "</ul>";
+      return details;
+    } else {
+      return input;
+    }
+}
+
 // Function for comparing data in Handlebars
 function handlebarsCompare(lvalue, operator, rvalue, options) {
     var operators, result;

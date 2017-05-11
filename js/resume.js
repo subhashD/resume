@@ -33,6 +33,7 @@ $(document).ready(function() {
             Handlebars.registerHelper("shortenDate", shortenDate);
             Handlebars.registerHelper("formatPhone", formatPhone);
             Handlebars.registerHelper("formatGPA", formatGPA);
+            Handlebars.registerHelper("renderDetail", renderDetail);
             Handlebars.registerHelper("compare", handlebarsCompare);
 
             // Compile templates
