@@ -34,7 +34,7 @@
 			"title" : "Summary",
 			"type" : "paragraph",
 			"data" : [
-				"I am a rapid prototyper with mechanical, electrical, and programming experience. My passion is automation and robotics. I also have substantial experience with web development."
+				"I am a full stack JavaScript developer with experience designing, developing, and deploying highly available production applicatons from scratch."
 			]
 		},
 		{
@@ -101,7 +101,54 @@
 						"alternating" : false
 					},
 					"detail" : [
-						"Developing web application for managing VoIP services using JavaScript, Ember.js, Sails.js, Node.js, jQuery, and Bootstrap"
+						"Served as the lead web application developer on a small development team",
+						"Led company transition from CVS to Git version control",
+						{
+							"summary": "Designed, developed, and deployed the TransNexus Administration Portal (TAP)",
+							"details": [
+								"Application provides interface and API for managing and licensing software installed on customers' servers",
+								"Application provides interface and API for collecting and distributing lists of blacklisted phone numbers, IP addresses, and user agents updated every hour",
+								"Developed sessionless RESTful API written in JavaScript using Sails.js and Node.js",
+								"Developed internal web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
+								"Deployed application on Amazon Web Services (EC2, RDS, S3, Elastic Beanstalk)"
+							]
+						},
+						{
+							"summary": "Designed and developed new interface for NexOSS, TransNexus's flagship product",
+							"details": [
+								"Replaced existing Java web application with JavaScript web application",
+								"Developed RESTful API written in JavaScript using Sails.js and Node.js",
+								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap"
+							]
+						},
+						{
+							"summary": "Developed and deployed new responsive company and support websites - <a href='https://transnexus.com' target='_blank'>https://transnexus.com</a>",
+							"details": [
+								"Partnered with marketing department to design websites",
+								"Developed websites using Grav CMS, Javascript, HTML, and CSS",
+								"Deployed websites with PHP-FPM and NGINX on Amazon Web Services (EC2)"
+							]
+						}
+					]
+				},
+				{
+					"company" : "Georgia Tech",
+					"position" : "Creative Design Lab Assistant",
+					"location" : "Atlanta, GA",
+					"dates" : {
+						"start" : {
+							"month" : "May",
+							"year" : 2015
+						},
+						"end" : {
+							"month" : "July",
+							"year" : 2015
+						},
+						"present" : false,
+						"alternating" : false
+					},
+					"detail" : [
+						"Supervised and assisted students with machining and LabVIEW programming"
 					]
 				},
 				{
@@ -122,30 +169,9 @@
 					},
 					"detail" : [
 						"Worked on small team to develop and test prototype for use in future cockpit of automated vehicles",
-						"Developed GUI using MATLAB to monitor and control prototype via UDP in real time for dynamic simulator testing",
+						"Developed GUI to monitor and control prototype in real time for dynamic simulator testing using MATLAB",
 						"Created electrical system and software for controlling linear actuator with pulse width modulation using C++",
 						"Created custom PCB Arduino shield and software for recording feedback with force sensitive resistors using C++"
-					]
-				},
-				{
-					"company" : "Alpha Epsilon Pi Zeta Chapter",
-					"position" : "Webmaster",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "May",
-							"year" : 2014
-						},
-						"end" : {
-							"month" : "December",
-							"year" : 2014
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Developed internal website using Drupal CMS and Pydio for managing users and internal documents",
-						"Integrated Georgia Tech’s LDAP database with user management system and utilized CAS servers for authentication"
 					]
 				},
 				{
@@ -211,27 +237,6 @@
 						"Created automated tool for gathering and analyzing licensing server data using Perl, VBA, and batch",
 						"Created project tracking system to quickly identify problematic deadlines using VBA"
 					]
-				},
-				{
-					"company" : "Georgia Tech IEEE",
-					"position" : "Innovation Team Technical Lead",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "August",
-							"year" : 2011
-						},
-						"end" : {
-							"month" : "May",
-							"year" : 2012
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Designed object detection system for competition robot using infrared, ultrasonic, and tactile sensors",
-						"Programmed movement algorithms for advanced line following using BASIC and C"
-					]
 				}
 			]
 		},
@@ -242,46 +247,33 @@
 				{
 					"type" : "Programming Languages",
 					"contents" : [
-						"C/C++",
-						"Python",
-						"Java",
-						"MATLAB",
-						"Unix shell",
-						"assembly"
+						"JavaScript (advanced)",
+						"C/C++ (moderate)",
+						"Python (moderate)",
+						"MATLAB (moderate)",
+						"MySQL (basic)"
 					]
 				},
 				{
-					"type" : "Web Development",
+					"type" : "Web Frameworks",
 					"contents" : [
-						"JavaScript",
-						"HTML",
-						"CSS",
 						"Node.js",
-						"Ember.js",
 						"Sails.js",
+						"Ember.js",
 						"Handlebars",
-						"jQuery"
+						"jQuery",
+						"Bootstrap"
 					]
 				},
 				{
-					"type" : "Platforms",
+					"type" : "Development Tools",
 					"contents" : [
-						"Windows",
-						"Mac OS",
-						"Ubuntu"
-					]
-				},
-				{
-					"type" : "Manufacturing",
-					"contents" : [
-						"Soldering",
-						"table saw",
-						"miter saw",
-						"band saw",
-						"drill press",
-						"router",
-						"mill",
-						"lathe"
+						"Git",
+						"Travis CI",
+						"Amazon EC2",
+						"Amazon RDS",
+						"Amazon S3",
+						"Amazon Elastic Beanstalk"
 					]
 				}
 			]
@@ -364,72 +356,6 @@
 					},
 					"detail" : [
 						"Tool for creating resume by compiling JSON content and HTML layout written in JavaScript using jQuery and Handlebars"
-					]
-				}
-			]
-		},
-		{
-			"title" : "Leadership Experience",
-			"type" : "experience",
-			"data" : [
-				{
-					"company" : "Georgia Tech",
-					"position" : "Creative Design Lab Assistant",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "May",
-							"year" : 2015
-						},
-						"end" : {
-							"month" : "July",
-							"year" : 2015
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Supervised and assisted students with machining and LabVIEW programming"
-					]
-				},
-				{
-					"company" : "Georgia Tech Housing",
-					"position" : "Harrison Hall Peer Leader",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "August",
-							"year" : 2012
-						},
-						"end" : {
-							"month" : "December",
-							"year" : 2012
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Worked with freshmen to facilitate and develop a community environment within Harrison residence halls"
-					]
-				},
-				{
-					"company" : "Georgia Tech",
-					"position" : "Freshman Seminar Team Leader",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "August",
-							"year" : 2012
-						},
-						"end" : {
-							"month" : "December",
-							"year" : 2012
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Mentored group of new students in their transition to college life at Georgia Tech"
 					]
 				}
 			]
