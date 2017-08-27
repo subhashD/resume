@@ -34,7 +34,7 @@
 			"title" : "Summary",
 			"type" : "paragraph",
 			"data" : [
-				"I am a full stack JavaScript developer with experience designing, developing, and deploying highly available production applications from scratch."
+				"I am a full stack JavaScript developer with experience designing, developing, and deploying highly available applications on AWS."
 			]
 		},
 		{
@@ -101,20 +101,28 @@
 						"alternating" : false
 					},
 					"detail" : [
-						"Served as the lead web application developer on a small development team",
-						"Led company transition from CVS to Git version control",
+						"Served as lead web developer on small development team",
 						{
-							"summary": "Designed, developed, and deployed the TransNexus Administration Portal (TAP)",
+							"summary": "Designed, developed, and deployed ClearIP fraud detection platform",
 							"details": [
-								"Application provides interface and API for managing and licensing software installed on customers' servers",
-								"Application provides interface and API for collecting and distributing lists of blacklisted phone numbers, IP addresses, and user agents updated every hour",
-								"Developed sessionless RESTful API written in JavaScript using Sails.js and Node.js",
-								"Developed internal web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
-								"Deployed application on Amazon Web Services (EC2, RDS, S3, Elastic Beanstalk)"
+								"Application provides real time fraud detection and prevention with near linear scalability",
+								"Developed SIP fraud analysis system written in Node.js with Redis for storage",
+								"Developed RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
+								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
+								"Deployed applications with Elastic Beanstalk and S3 on Amazon Web Services"
 							]
 						},
 						{
-							"summary": "Designed and developed new interface for NexOSS, TransNexus's flagship product",
+							"summary": "Designed, developed, and deployed TransNexus Administration Portal",
+							"details": [
+								"Application provides web interface and API for managing software installed on customers' servers",
+								"Developed RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
+								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
+								"Deployed applications with Elastic Beanstalk and S3 on Amazon Web Services"
+							]
+						},
+						{
+							"summary": "Designed and developed new interface for NexOSS",
 							"details": [
 								"Replaced existing Java web application with JavaScript web application",
 								"Developed RESTful API written in JavaScript using Sails.js and Node.js",
@@ -122,33 +130,13 @@
 							]
 						},
 						{
-							"summary": "Developed and deployed new responsive company and support websites - <a href='https://transnexus.com' target='_blank'>https://transnexus.com</a>",
+							"summary": "Developed and deployed new responsive company and support websites",
 							"details": [
 								"Partnered with marketing department to design websites",
 								"Developed websites using Grav CMS, Javascript, HTML, and CSS",
-								"Deployed websites with PHP-FPM and NGINX on Amazon Web Services (EC2)"
+								"Deployed websites with PHP-FPM and NGINX on Amazon Web Services"
 							]
 						}
-					]
-				},
-				{
-					"company" : "Georgia Tech",
-					"position" : "Creative Design Lab Assistant",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "May",
-							"year" : 2015
-						},
-						"end" : {
-							"month" : "July",
-							"year" : 2015
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Supervised and assisted students with machining and LabVIEW programming"
 					]
 				},
 				{
@@ -250,8 +238,7 @@
 						"JavaScript (advanced)",
 						"C/C++ (moderate)",
 						"Python (moderate)",
-						"MATLAB (moderate)",
-						"MySQL (basic)"
+						"MATLAB (moderate)"
 					]
 				},
 				{
@@ -266,14 +253,10 @@
 					]
 				},
 				{
-					"type" : "Development Tools",
+					"type" : "Databases",
 					"contents" : [
-						"Git",
-						"Travis CI",
-						"Amazon EC2",
-						"Amazon RDS",
-						"Amazon S3",
-						"Amazon Elastic Beanstalk"
+						"Redis",
+						"MySQL"
 					]
 				}
 			]
@@ -282,6 +265,25 @@
 			"title" : "Projects",
 			"type" : "projects",
 			"data" : [
+				{
+					"project" : "BQueue",
+					"url" : "https://github.com/fenichelar/BQueue",
+					"dates" : {
+						"start" : {
+							"month" : "July",
+							"year" : 2017
+						},
+						"end" : {
+							"month" : "",
+							"year" : null
+						},
+						"present" : true,
+						"alternating" : false
+					},
+					"detail" : [
+						"Node.js library for reliable and distributed batch message processing using Redis"
+					]
+				},
 				{
 					"project" : "Arduino Pin Library",
 					"url" : "https://github.com/fenichelar/Pin",
@@ -318,25 +320,6 @@
 					},
 					"detail" : [
 						"HTML5 space game written in TypeScript using Phaser"
-					]
-				},
-				{
-					"project" : "GTFriender",
-					"url" : "https://github.com/fenichelar/GTFriender",
-					"dates" : {
-						"start" : {
-							"month" : "August",
-							"year" : 2015
-						},
-						"end" : {
-							"month" : "May",
-							"year" : "2016"
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Web application for scheduling events written in JavaScript using Ember.js, Sails.js, Node.js, jQuery, Bootstrap, and MongoDB"
 					]
 				},
 				{
