@@ -115,7 +115,7 @@
 						{
 							"summary": "Designed, developed, and deployed TransNexus Administration Portal",
 							"details": [
-								"Application provides web interface and API for managing software installed on customers' servers",
+								"Application provides web interface and API for managing customers' software",
 								"Developed RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
 								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
 								"Deployed applications with Elastic Beanstalk and S3 on Amazon Web Services"
