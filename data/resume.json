@@ -101,11 +101,11 @@
 						"alternating" : false
 					},
 					"detail" : [
-						"Served as lead web developer on small development team",
 						{
 							"summary": "Designed, developed, and deployed ClearIP fraud detection platform",
 							"details": [
 								"Application provides real time fraud detection and prevention with near linear scalability",
+								"Served as lead developer on the project",
 								"Developed SIP fraud analysis system written in Node.js with Redis for storage",
 								"Developed RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
 								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
