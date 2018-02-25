@@ -109,7 +109,7 @@
 								"Developed SIP fraud analysis system written in Node.js with Redis for storage",
 								"Developed RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
 								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
-								"Deployed applications with Elastic Beanstalk and S3 on Amazon Web Services"
+								"Deployed applications with HashiCorp Packer, AWS Elastic Beanstalk, and AWS S3 on Amazon Web Services"
 							]
 						},
 						{
