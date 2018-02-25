@@ -258,6 +258,24 @@
 						"Redis",
 						"MySQL"
 					]
+				},
+				{
+					"type" : "AWS",
+					"contents" : [
+						"VPC",
+						"EC2",
+						"Lambda",
+						"Auto Scaling",
+						"ELB",
+						"RDS",
+						"S3",
+						"EBS",
+						"CloudFront",
+						"IAM",
+						"Route 53",
+						"Cloud Watch",
+						"Elastic Beanstalk"
+					]
 				}
 			]
 		},
