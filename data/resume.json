@@ -133,8 +133,8 @@
 							"summary": "Developed and deployed new responsive company and support websites",
 							"details": [
 								"Partnered with marketing department to design websites",
-								"Developed websites using Grav CMS, Javascript, HTML, and CSS",
-								"Deployed websites with PHP-FPM and NGINX on Amazon Web Services"
+								"Developed websites using Hugo, Grav, Javascript, HTML, and CSS",
+								"Deployed websites with S3, PHP-FPM, and NGINX on Amazon Web Services"
 							]
 						}
 					]
