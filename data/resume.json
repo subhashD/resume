@@ -240,6 +240,7 @@
           "contents": [
             "Node.js",
             "Sails.js",
+            "Express.js",
             "Ember.js",
             "Handlebars",
             "jQuery",
