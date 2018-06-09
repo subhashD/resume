@@ -10,11 +10,11 @@
   "layout": {
     "html": {
       "size": {
-        "name": 30,
-        "header": 21,
-        "titles": 20,
-        "paragraph": 19,
-        "details": 18
+        "name": 28,
+        "header": 20,
+        "titles": 19,
+        "paragraph": 18,
+        "details": 17
       }
     },
     "pdf": {
@@ -24,8 +24,8 @@
       "margins": {
         "top": 7,
         "bottom": 2,
-        "left": 8,
-        "right": 8
+        "left": 10,
+        "right": 10
       }
     }
   },
