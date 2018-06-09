@@ -24,8 +24,8 @@
       "margins": {
         "top": 7,
         "bottom": 2,
-        "left": 13,
-        "right": 13
+        "left": 11,
+        "right": 11
       }
     }
   },
@@ -34,7 +34,7 @@
       "title": "Summary",
       "type": "paragraph",
       "data": [
-        "I am a full stack JavaScript developer with experience designing, developing, and deploying production applications on AWS."
+        "I am a full stack JavaScript developer with experience designing, developing, deploying, and maintained production applications on AWS."
       ]
     },
     {
