@@ -372,7 +372,7 @@
             "alternating": false
           },
           "detail": [
-            "Tool for creating resume by compiling JSON content and HTML layout written in JavaScript using jQuery and Handlebars"
+            "Tool for creating HTML and PDF resumes from JSON data and HTML layouts written in JavaScript using jQuery and Handlebars"
           ]
         }
       ]
