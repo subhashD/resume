@@ -109,7 +109,7 @@
                 "Developed distrubuted, stateless SIP server written in JavaScript using Node.js with Redis for storage",
                 "Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
                 "Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
-                "Developed numerous other applications written in JavaScript using Node.js",
+                "Developed numerous supporting applications for queue processing, billing, archiving, etc. written in JavaScript using Node.js",
                 "Deployed applications with HashiCorp Packer, AWS Elastic Beanstalk, and AWS S3"
               ]
             },
