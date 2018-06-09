@@ -102,20 +102,21 @@
           },
           "detail": [
             {
-              "summary": "Designed, developed deployed, and maintained ClearIP VoIP management and protection platform",
+              "summary": "Designed, developed, deployed, and maintained ClearIP VoIP management and protection platform",
               "details": [
-                "Application provides real time fraud detection and prevention with near linear scalability",
+                "Provides real time fraud detection and prevention with near linear scalability using microservice architecture pattern",
                 "Served as architect and lead developer on project",
                 "Developed distrubuted, stateless SIP server written in JavaScript using Node.js with Redis for storage",
                 "Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
                 "Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
+                "Developed numerous other applications written in JavaScript using Node.js",
                 "Deployed applications with HashiCorp Packer, AWS Elastic Beanstalk, and AWS S3"
               ]
             },
             {
               "summary": "Designed, developed, deployed, and maintained TransNexus Administration Portal",
               "details": [
-                "Application provides web interface and API for managing customers' software",
+                "Provides web interface and API for managing customers' software",
                 "Served as architect and lead developer on project",
                 "Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
                 "Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
@@ -293,7 +294,7 @@
             "alternating": false
           },
           "detail": [
-            "Ember Simple Auth extension for token based authentication including JSON web tokens"
+            "Ember Simple Auth extension for token based authentication including JSON web tokens written in JavaScript using Ember.js"
           ]
         },
         {
@@ -312,7 +313,7 @@
             "alternating": false
           },
           "detail": [
-            "Node.js library for reliable and distributed batch message processing using Redis"
+            "Node.js library for reliable and distributed batch message processing using Redis written in JavaScript"
           ]
         },
         {
