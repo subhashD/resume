@@ -1,73 +1,78 @@
 body {
-	font-family: "Times New Roman", Times, Serif;
-	width: 95%;
-	min-width: 1000px;
-	margin: 0 auto;
+  font-family: "Times New Roman", Times, Serif;
+  width: 95%;
+  min-width: 1000px;
+  margin: 0 auto;
 }
 
 h1 {
-	text-align: center;
+  text-align: center;
 }
 
 h2 {
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 0;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 h3 {
-	margin-top: 10px;
-	margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 hr {
-	margin-top: 2px;
-	margin-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 5px;
 }
 
 ul {
-	margin-top: 0;
-	margin-bottom: 5px;
-	padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 20px;
 }
 
 li {
-	margin-left: 15px;
+  margin-left: 15px;
 }
 
 .header {
-	margin-top: 0;
-	margin-bottom: 0;
-	display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
 }
 
 .sections {
-	padding-top: 2px;
-	display: block;
+  padding-top: 2px;
+  display: block;
 }
 
 .left {
-	float: left;
-	text-align: left;
-	width:33.33%;
+  float: left;
+  text-align: left;
+  width: 33.33%;
 }
 
 .center {
-	float: left;
-	text-align: center;
-	width:33.33%;
+  float: left;
+  text-align: center;
+  width: 33.33%;
 }
 
 .right {
-	float: right;
-	text-align: right;
-	width:33.33%;
+  float: right;
+  text-align: right;
+  width: 33.33%;
+}
+
+.date {
+  float: right;
+  text-align: right;
 }
 
 .link {
-	color: blue;
+  color: blue;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }

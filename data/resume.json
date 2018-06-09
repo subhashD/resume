@@ -1,379 +1,379 @@
 {
-	"name" : "Alec Ross Fenichel",
-	"telephone" : "+1 (407) 760-0036",
-	"email" : "alec.fenichel@gmail.com",
-	"links" : [
-		"https://github.com/fenichelar",
-		"https://linkedin.com/in/fenichelar"
-	],
-	"analytics" : "UA-65359312-3",
-	"layout" : {
-		"html" : {
-			"size" : {
-				"name" : 30,
-				"header" : 21,
-				"titles" : 20,
-				"paragraph" : 19,
-				"details" : 18
-			}
-		},
-		"pdf" : {
-			"source" : "http://localhost/resume/Resume.html",
-			"size" : "letter",
-			"dpi" : 96,
-			"margins" : {
-				"top" : 7,
-				"bottom" : 2,
-				"left" : 13,
-				"right" : 13
-			}
-		}
-	},
-	"sections" : [
-		{
-			"title" : "Summary",
-			"type" : "paragraph",
-			"data" : [
-				"I am a full stack JavaScript developer with experience designing, developing, and deploying production applications on AWS."
-			]
-		},
-		{
-			"title" : "Education",
-			"type" : "education",
-			"data" : [
-				{
-					"school" : "Georgia Institute of Technology",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "June",
-							"year" : 2011
-						},
-						"end" : {
-							"month" : "December",
-							"year" : 2016
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"gpa" : null,
-					"honors" : {
-						"program" : false,
-						"faculty" : false
-					},
-					"degree" : [
-						{
-							"progress" : "Pursuing",
-							"level" : "Bachelor",
-							"type" : "Science",
-							"name" : "Mechanical Engineering",
-							"concentrations" : []
-						},
-						{
-							"progress" : "Pursuing",
-							"level" : "Bachelor",
-							"type" : "Science",
-							"name" : "Computer Science",
-							"concentrations" : ["Devices", "Intelligence"]
-						}
-					]
-				}
-			]
-		},
-		{
-			"title" : "Technical Experience",
-			"type" : "experience",
-			"data" : [
-				{
-					"company" : "TransNexus",
-					"position" : "Software Developer",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "September",
-							"year" : 2015
-						},
-						"end" : {
-							"month" : "",
-							"year" : ""
-						},
-						"present" : true,
-						"alternating" : false
-					},
-					"detail" : [
-						{
-							"summary": "Designed, developed deployed, and maintained ClearIP VoIP management and protection platform",
-							"details": [
-								"Application provides real time fraud detection and prevention with near linear scalability",
-								"Served as architect and lead developer on project",
-								"Developed distrubuted, stateless SIP server written in JavaScript using Node.js with Redis for storage",
-								"Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
-								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
-								"Deployed applications with HashiCorp Packer, AWS Elastic Beanstalk, and AWS S3"
-							]
-						},
-						{
-							"summary": "Designed, developed, deployed, and maintained TransNexus Administration Portal",
-							"details": [
-								"Application provides web interface and API for managing customers' software",
-								"Served as architect and lead developer on project",
-								"Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
-								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
-								"Deployed applications with AWS Elastic Beanstalk and AWS S3"
-							]
-						},
-						{
-							"summary": "Designed and developed new interface for NexOSS",
-							"details": [
-								"Replaced existing Java web application with JavaScript web application",
-								"Developed RESTful API written in JavaScript using Sails.js and Node.js",
-								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap"
-							]
-						}
-					]
-				},
-				{
-					"company" : "BMW Group",
-					"position" : "R&D Engineer Intern",
-					"location" : "Munich, Germany",
-					"dates" : {
-						"start" : {
-							"month" : "August",
-							"year" : 2014
-						},
-						"end" : {
-							"month" : "December",
-							"year" : 2014
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Worked on small team to develop and test prototype for use in future cockpit of automated vehicles",
-						"Developed GUI to monitor and control prototype in real time for dynamic simulator testing using MATLAB",
-						"Created electrical system and software for controlling linear actuator with pulse width modulation using C++",
-						"Created custom PCB Arduino shield and software for recording feedback with force sensitive resistors using C++"
-					]
-				},
-				{
-					"company" : "McKenney’s, Inc.",
-					"position" : "Information Technology Intern ",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "May",
-							"year" : 2014
-						},
-						"end" : {
-							"month" : "August",
-							"year" : 2014
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Diagnosed and resolved technical issues related to hardware and software",
-						"Developed automated system for sharing files with contractors via FTP using HTML, JavaScript, PHP, and batch"
-					]
-				},
-				{
-					"company" : "Georgia Tech IEEE",
-					"position" : "Webmaster",
-					"location" : "Atlanta, GA",
-					"dates" : {
-						"start" : {
-							"month" : "August",
-							"year" : 2011
-						},
-						"end" : {
-							"month" : "May",
-							"year" : 2014
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Developed new website using HTML, CSS, JavaScript, and PHP",
-						"Placed in IEEE SoutheastCon Website Competition every year – 1st Place (2014), 1st Place (2013), 3rd Place (2012)"
-					]
-				},
-				{
-					"company" : "General Electric Aviation",
-					"position" : "Software Engineer Intern",
-					"location" : "Cincinnati, OH",
-					"dates" : {
-						"start" : {
-							"month" : "May",
-							"year" : 2012
-						},
-						"end" : {
-							"month" : "August",
-							"year" : 2012
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Developed software for first dual core jet engine controller using SCADE qualified C code generator",
-						"Created automated tool for gathering and analyzing licensing server data using Perl, VBA, and batch",
-						"Created project tracking system to quickly identify problematic deadlines using VBA"
-					]
-				}
-			]
-		},
-		{
-			"title" : "Skills",
-			"type" : "skills",
-			"data" : [
-				{
-					"type" : "Programming Languages",
-					"contents" : [
-						"JavaScript (advanced)",
-						"C/C++ (moderate)",
-						"Python (moderate)",
-						"MATLAB (moderate)"
-					]
-				},
-				{
-					"type" : "Web Frameworks",
-					"contents" : [
-						"Node.js",
-						"Sails.js",
-						"Ember.js",
-						"Handlebars",
-						"jQuery",
-						"Bootstrap"
-					]
-				},
-				{
-					"type" : "Databases",
-					"contents" : [
-						"Redis",
-						"MySQL"
-					]
-				},
-				{
-					"type" : "AWS",
-					"contents" : [
-						"VPC",
-						"EC2",
-						"Lambda",
-						"Auto Scaling",
-						"ELB",
-						"RDS",
-						"S3",
-						"EBS",
-						"CloudFront",
-						"IAM",
-						"Route 53",
-						"Cloud Watch",
-						"Elastic Beanstalk"
-					]
-				}
-			]
-		},
-		{
-			"title" : "Projects",
-			"type" : "projects",
-			"data" : [
-				{
-					"project" : "Ember Simple Auth Token",
-					"role" : "contributor",
-					"url" : "https://github.com/jpadilla/ember-simple-auth-token",
-					"dates" : {
-						"start" : {
-							"month" : "May",
-							"year" : 2018
-						},
-						"end" : {
-							"month" : "",
-							"year" : null
-						},
-						"present" : true,
-						"alternating" : false
-					},
-					"detail" : [
-						"Ember Simple Auth extension for token based authentication including JSON web tokens"
-					]
-				},
-				{
-					"project" : "BQueue",
-					"url" : "https://github.com/fenichelar/BQueue",
-					"dates" : {
-						"start" : {
-							"month" : "July",
-							"year" : 2017
-						},
-						"end" : {
-							"month" : "",
-							"year" : null
-						},
-						"present" : true,
-						"alternating" : false
-					},
-					"detail" : [
-						"Node.js library for reliable and distributed batch message processing using Redis"
-					]
-				},
-				{
-					"project" : "Arduino Pin Library",
-					"url" : "https://github.com/fenichelar/Pin",
-					"dates" : {
-						"start" : {
-							"month" : "December",
-							"year" : 2014
-						},
-						"end" : {
-							"month" : "",
-							"year" : null
-						},
-						"present" : true,
-						"alternating" : false
-					},
-					"detail" : [
-						"Arduino library for fast and simultaneous operations to Arduino I/O pins using port manipulation written in C++"
-					]
-				},
-				{
-					"project" : "Too Many Lasers",
-					"role" : "contributor",
-					"url" : "https://github.com/fenichelar/Too-Many-Lasers",
-					"dates" : {
-						"start" : {
-							"month" : "June",
-							"year" : 2016
-						},
-						"end" : {
-							"month" : "August",
-							"year" : 2016
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"HTML5 space game written in TypeScript using Phaser"
-					]
-				},
-				{
-					"project" : "Resume Generator",
-					"url" : "https://github.com/fenichelar/resume",
-					"dates" : {
-						"start" : {
-							"month" : "March",
-							"year" : 2015
-						},
-						"end" : {
-							"month" : "December",
-							"year" : 2015
-						},
-						"present" : false,
-						"alternating" : false
-					},
-					"detail" : [
-						"Tool for creating resume by compiling JSON content and HTML layout written in JavaScript using jQuery and Handlebars"
-					]
-				}
-			]
-		}
-	]
+  "name": "Alec Ross Fenichel",
+  "telephone": "+1 (407) 760-0036",
+  "email": "alec.fenichel@gmail.com",
+  "links": [
+    "https://github.com/fenichelar",
+    "https://linkedin.com/in/fenichelar"
+  ],
+  "analytics": "UA-65359312-3",
+  "layout": {
+    "html": {
+      "size": {
+        "name": 30,
+        "header": 21,
+        "titles": 20,
+        "paragraph": 19,
+        "details": 18
+      }
+    },
+    "pdf": {
+      "source": "http://localhost/resume/Resume.html",
+      "size": "letter",
+      "dpi": 96,
+      "margins": {
+        "top": 7,
+        "bottom": 2,
+        "left": 13,
+        "right": 13
+      }
+    }
+  },
+  "sections": [
+    {
+      "title": "Summary",
+      "type": "paragraph",
+      "data": [
+        "I am a full stack JavaScript developer with experience designing, developing, and deploying production applications on AWS."
+      ]
+    },
+    {
+      "title": "Education",
+      "type": "education",
+      "data": [
+        {
+          "school": "Georgia Institute of Technology",
+          "location": "Atlanta, GA",
+          "dates": {
+            "start": {
+              "month": "June",
+              "year": 2011
+            },
+            "end": {
+              "month": "December",
+              "year": 2016
+            },
+            "present": false,
+            "alternating": false
+          },
+          "gpa": null,
+          "honors": {
+            "program": false,
+            "faculty": false
+          },
+          "degree": [
+            {
+              "progress": "Pursuing",
+              "level": "Bachelor",
+              "type": "Science",
+              "name": "Mechanical Engineering",
+              "concentrations": []
+            },
+            {
+              "progress": "Pursuing",
+              "level": "Bachelor",
+              "type": "Science",
+              "name": "Computer Science",
+              "concentrations": ["Devices", "Intelligence"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Technical Experience",
+      "type": "experience",
+      "data": [
+        {
+          "company": "TransNexus",
+          "position": "Software Developer",
+          "location": "Atlanta, GA",
+          "dates": {
+            "start": {
+              "month": "September",
+              "year": 2015
+            },
+            "end": {
+              "month": "",
+              "year": ""
+            },
+            "present": true,
+            "alternating": false
+          },
+          "detail": [
+            {
+              "summary": "Designed, developed deployed, and maintained ClearIP VoIP management and protection platform",
+              "details": [
+                "Application provides real time fraud detection and prevention with near linear scalability",
+                "Served as architect and lead developer on project",
+                "Developed distrubuted, stateless SIP server written in JavaScript using Node.js with Redis for storage",
+                "Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
+                "Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
+                "Deployed applications with HashiCorp Packer, AWS Elastic Beanstalk, and AWS S3"
+              ]
+            },
+            {
+              "summary": "Designed, developed, deployed, and maintained TransNexus Administration Portal",
+              "details": [
+                "Application provides web interface and API for managing customers' software",
+                "Served as architect and lead developer on project",
+                "Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
+                "Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
+                "Deployed applications with AWS Elastic Beanstalk and AWS S3"
+              ]
+            },
+            {
+              "summary": "Designed and developed new interface for NexOSS",
+              "details": [
+                "Replaced existing Java web application with JavaScript web application",
+                "Developed RESTful API written in JavaScript using Sails.js and Node.js",
+                "Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap"
+              ]
+            }
+          ]
+        },
+        {
+          "company": "BMW Group",
+          "position": "R&D Engineer Intern",
+          "location": "Munich, Germany",
+          "dates": {
+            "start": {
+              "month": "August",
+              "year": 2014
+            },
+            "end": {
+              "month": "December",
+              "year": 2014
+            },
+            "present": false,
+            "alternating": false
+          },
+          "detail": [
+            "Worked on small team to develop and test prototype for use in future cockpit of automated vehicles",
+            "Developed GUI to monitor and control prototype in real time for dynamic simulator testing using MATLAB",
+            "Created electrical system and software for controlling linear actuator with pulse width modulation using C++",
+            "Created custom PCB Arduino shield and software for recording feedback with force sensitive resistors using C++"
+          ]
+        },
+        {
+          "company": "McKenney’s, Inc.",
+          "position": "Information Technology Intern ",
+          "location": "Atlanta, GA",
+          "dates": {
+            "start": {
+              "month": "May",
+              "year": 2014
+            },
+            "end": {
+              "month": "August",
+              "year": 2014
+            },
+            "present": false,
+            "alternating": false
+          },
+          "detail": [
+            "Diagnosed and resolved technical issues related to hardware and software",
+            "Developed automated system for sharing files with contractors via FTP using HTML, JavaScript, PHP, and batch"
+          ]
+        },
+        {
+          "company": "Georgia Tech IEEE",
+          "position": "Webmaster",
+          "location": "Atlanta, GA",
+          "dates": {
+            "start": {
+              "month": "August",
+              "year": 2011
+            },
+            "end": {
+              "month": "May",
+              "year": 2014
+            },
+            "present": false,
+            "alternating": false
+          },
+          "detail": [
+            "Developed new website using HTML, CSS, JavaScript, and PHP",
+            "Placed in IEEE SoutheastCon Website Competition every year – 1st Place (2014), 1st Place (2013), 3rd Place (2012)"
+          ]
+        },
+        {
+          "company": "General Electric Aviation",
+          "position": "Software Engineer Intern",
+          "location": "Cincinnati, OH",
+          "dates": {
+            "start": {
+              "month": "May",
+              "year": 2012
+            },
+            "end": {
+              "month": "August",
+              "year": 2012
+            },
+            "present": false,
+            "alternating": false
+          },
+          "detail": [
+            "Developed software for first dual core jet engine controller using SCADE qualified C code generator",
+            "Created automated tool for gathering and analyzing licensing server data using Perl, VBA, and batch",
+            "Created project tracking system to quickly identify problematic deadlines using VBA"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "type": "skills",
+      "data": [
+        {
+          "type": "Programming Languages",
+          "contents": [
+            "JavaScript (advanced)",
+            "C/C++ (moderate)",
+            "Python (moderate)",
+            "MATLAB (moderate)"
+          ]
+        },
+        {
+          "type": "Web Frameworks",
+          "contents": [
+            "Node.js",
+            "Sails.js",
+            "Ember.js",
+            "Handlebars",
+            "jQuery",
+            "Bootstrap"
+          ]
+        },
+        {
+          "type": "Databases",
+          "contents": [
+            "Redis",
+            "MySQL"
+          ]
+        },
+        {
+          "type": "AWS",
+          "contents": [
+            "VPC",
+            "EC2",
+            "Lambda",
+            "Auto Scaling",
+            "ELB",
+            "RDS",
+            "S3",
+            "EBS",
+            "CloudFront",
+            "IAM",
+            "Route 53",
+            "Cloud Watch",
+            "Elastic Beanstalk"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "type": "projects",
+      "data": [
+        {
+          "project": "Ember Simple Auth Token",
+          "role": "contributor",
+          "url": "https://github.com/jpadilla/ember-simple-auth-token",
+          "dates": {
+            "start": {
+              "month": "May",
+              "year": 2018
+            },
+            "end": {
+              "month": "",
+              "year": null
+            },
+            "present": true,
+            "alternating": false
+          },
+          "detail": [
+            "Ember Simple Auth extension for token based authentication including JSON web tokens"
+          ]
+        },
+        {
+          "project": "BQueue",
+          "url": "https://github.com/fenichelar/BQueue",
+          "dates": {
+            "start": {
+              "month": "July",
+              "year": 2017
+            },
+            "end": {
+              "month": "",
+              "year": null
+            },
+            "present": true,
+            "alternating": false
+          },
+          "detail": [
+            "Node.js library for reliable and distributed batch message processing using Redis"
+          ]
+        },
+        {
+          "project": "Arduino Pin Library",
+          "url": "https://github.com/fenichelar/Pin",
+          "dates": {
+            "start": {
+              "month": "December",
+              "year": 2014
+            },
+            "end": {
+              "month": "",
+              "year": null
+            },
+            "present": true,
+            "alternating": false
+          },
+          "detail": [
+            "Arduino library for fast and simultaneous operations to Arduino I/O pins using port manipulation written in C++"
+          ]
+        },
+        {
+          "project": "Too Many Lasers",
+          "role": "contributor",
+          "url": "https://github.com/fenichelar/Too-Many-Lasers",
+          "dates": {
+            "start": {
+              "month": "June",
+              "year": 2016
+            },
+            "end": {
+              "month": "August",
+              "year": 2016
+            },
+            "present": false,
+            "alternating": false
+          },
+          "detail": [
+            "HTML5 space game written in TypeScript using Phaser"
+          ]
+        },
+        {
+          "project": "Resume Generator",
+          "url": "https://github.com/fenichelar/resume",
+          "dates": {
+            "start": {
+              "month": "March",
+              "year": 2015
+            },
+            "end": {
+              "month": "December",
+              "year": 2015
+            },
+            "present": false,
+            "alternating": false
+          },
+          "detail": [
+            "Tool for creating resume by compiling JSON content and HTML layout written in JavaScript using jQuery and Handlebars"
+          ]
+        }
+      ]
+    }
+  ]
 }

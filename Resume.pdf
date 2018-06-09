@@ -3,8 +3,8 @@
 bash data/createPDF.sh --server
 
 if [[ ! "$HTTP_HOST" =~ "localhost" ]] && [[ ! "$HTTP_HOST" =~ ".dev" ]] && [[ ! "$HTTP_HOST" =~ "127.0.0.1" ]]
-	then
-		TIMESTAMP=$(date +"%a %b %d %T %Y")
-		LOG_STRING="[$TIMESTAMP] [client $REMOTE_ADDR] Resume.pdf generated"
-		echo $LOG_STRING >> /var/log/resume.log
+  then
+    TIMESTAMP=$(date +"%a %b %d %T %Y")
+    LOG_STRING="[$TIMESTAMP] [client $REMOTE_ADDR] Resume.pdf generated"
+    echo $LOG_STRING >> /var/log/resume.log
 fi

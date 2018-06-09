@@ -2,8 +2,8 @@
 
 BIN_PATH="/usr/local/bin/"
 if [ -d "$BIN_PATH" ]
-	then
-		export PATH=$BIN_PATH:$PATH
+  then
+    export PATH=$BIN_PATH:$PATH
 fi
 
 SCRIPT_PATH=$(cd "$(dirname "$0")" && pwd)
@@ -26,22 +26,22 @@ DESTINATION_DIR=$(echo $SCRIPT_PATH | sed 's%/[^/]*$%/%')
 DESTINATION=$DESTINATION_DIR$DESTINATION_FILE
 
 PDF_COMMAND="
-	wkhtmltopdf -q
-	--dpi $DPI
-	--page-size $PAGE_SIZE
-	-L $LEFT_MARGIN -R $RIGHT_MARGIN -T $TOP_MARGIN -B $BOTTOM_MARGIN
-	$SOURCE -
+  wkhtmltopdf -q
+  --dpi $DPI
+  --page-size $PAGE_SIZE
+  -L $LEFT_MARGIN -R $RIGHT_MARGIN -T $TOP_MARGIN -B $BOTTOM_MARGIN
+  $SOURCE -
 "
 
 if [ "$1" = "--server" ]
-	then
-		echo "Content-type:application/pdf"
-		echo "Content-disposition:inline;filename=$DESTINATION_FILE"
-		echo ""
-		$(echo $PDF_COMMAND)
-	else
-		echo "Source: $SOURCE"
-		echo "Destination: $DESTINATION"
-		$($PDF_COMMAND > "$DESTINATION")
-		echo "Done"
+  then
+    echo "Content-type:application/pdf"
+    echo "Content-disposition:inline;filename=$DESTINATION_FILE"
+    echo ""
+    $(echo $PDF_COMMAND)
+  else
+    echo "Source: $SOURCE"
+    echo "Destination: $DESTINATION"
+    $($PDF_COMMAND > "$DESTINATION")
+    echo "Done"
 fi

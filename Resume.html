@@ -3,210 +3,209 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Resume</title>
-	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/handlebars.min.js"></script>
-	<script type="text/javascript" src="js/resume.js"></script>
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/handlebars.min.js"></script>
+  <script type="text/javascript" src="js/resume.js"></script>
 </head>
 
 <body>
-	<div id="resume"></div>
-	<div id="noJavascript">
-		<p>
-			This page requires Javascript! Please enable it.
-		</p>
-	</div>
+  <div id="resume"></div>
+  <div id="noJavascript">
+    <p>
+      This page requires Javascript! Please enable it.
+    </p>
+  </div>
 
-	<script type="text/x-handlebars-template" id="template">
-		<div class="header">
-			<div id="links" class="left">
-				<h3>
-					{{#links}}
-						<a href="{{.}}" target="_blank" class="link">{{.}}</a>
-						<br>
-					{{/links}}
-				</h3>
-			</div>
+  <script type="text/x-handlebars-template" id="template">
+    <div class="header">
+      <div id="links" class="left">
+        <h3>
+          {{#links}}
+            <a href="{{.}}" target="_blank" class="link">{{.}}</a>
+            <br>
+          {{/links}}
+        </h3>
+      </div>
 
-			<div id="name" class="center">
-				<h2>
-					{{name}}
-				</h2>
-			</div>
+      <div id="name" class="center">
+        <h2>
+          {{name}}
+        </h2>
+      </div>
 
-			<div id="contact" class="right">
-				<h3>
-					<a href="tel:{{formatPhone telephone}}">{{telephone}}</a>
-					<br>
-					<a href="mailto:{{email}}">{{email}}</a>
-				</h3>
-			</div>
-		</div>
+      <div id="contact" class="right">
+        <h3>
+          <a href="tel:{{formatPhone telephone}}">{{telephone}}</a>
+          <br>
+          <a href="mailto:{{email}}">{{email}}</a>
+        </h3>
+      </div>
+    </div>
 
-		<div class="sections clear">
-			{{#sections}}
-				<div id="{{type}}">
-					<h3>{{title}}</h3>
-					<hr>
-					{{#compare type "==" "paragraph"}}
-						{{data}}
-					{{/compare}}
-					{{#compare type "==" "education"}}
-						{{#data}}
-							{{> school}}
-						{{/data}}
-					{{/compare}}
-					{{#compare type "==" "experience"}}
-						{{#data}}
-							{{> experience}}
-						{{/data}}
-					{{/compare}}
-					{{#compare type "==" "organization"}}
-						{{#data}}
-							{{> organization}}
-						{{/data}}
-					{{/compare}}
-					{{#compare type "==" "projects"}}
-						{{#data}}
-							{{> project}}
-						{{/data}}
-					{{/compare}}
-					{{#compare type "==" "skills"}}
-						{{#data}}
-							{{> skill}}
-						{{/data}}
-					{{/compare}}
-				</div>
-			{{/sections}}
-		</div>
-	</script>
+    <div class="sections clear">
+      {{#sections}}
+        <div id="{{type}}">
+          <h3>{{title}}</h3>
+          <hr>
+          {{#compare type "==" "paragraph"}}
+            {{data}}
+          {{/compare}}
+          {{#compare type "==" "education"}}
+            {{#data}}
+              {{> school}}
+            {{/data}}
+          {{/compare}}
+          {{#compare type "==" "experience"}}
+            {{#data}}
+              {{> experience}}
+            {{/data}}
+          {{/compare}}
+          {{#compare type "==" "organization"}}
+            {{#data}}
+              {{> organization}}
+            {{/data}}
+          {{/compare}}
+          {{#compare type "==" "projects"}}
+            {{#data}}
+              {{> project}}
+            {{/data}}
+          {{/compare}}
+          {{#compare type "==" "skills"}}
+            {{#data}}
+              {{> skill}}
+            {{/data}}
+          {{/compare}}
+        </div>
+      {{/sections}}
+    </div>
+  </script>
 
-	<script type="text/x-handlebars-template" id="dateTemplate">
-		<div class="right">
-			{{#if alternating}}
-				(alternating semesters)
-			{{/if}}
+  <script type="text/x-handlebars-template" id="dateTemplate">
+    <div class="date">
+      {{#if alternating}}
+        (alternating semesters)
+      {{/if}}
 
-			{{shortenDate start.month}} {{shortenDate start.year}} &#8209;
-			{{#if present}}
-				present
-			{{else}}
-				{{shortenDate end.month}} {{shortenDate end.year}}
-			{{/if}}
-		</div>
-	</script>
+      {{shortenDate start.month}} {{shortenDate start.year}} &#8209;
+      {{#if present}}
+        present
+      {{else}}
+        {{shortenDate end.month}} {{shortenDate end.year}}
+      {{/if}}
+    </div>
+  </script>
 
-	<script type="text/x-handlebars-template" id="experienceTemplate">
-		<div>
-			{{company}} &#8209;
-			<strong>{{position}}</strong>
-			({{location}}) {{> date dates}}
+  <script type="text/x-handlebars-template" id="experienceTemplate">
+    <div>
+      {{company}} &#8209;
+      <strong>{{position}}</strong>
+      ({{location}}) {{> date dates}}
 
-			<ul>
-				{{#detail}}
-					<li>{{{renderDetail .}}}</li>
-				{{/detail}}
-			</ul>
-		</div>
-	</script>
+      <ul>
+        {{#detail}}
+          <li>{{{renderDetail .}}}</li>
+        {{/detail}}
+      </ul>
+    </div>
+  </script>
 
-	<script type="text/x-handlebars-template" id="organizationTemplate">
-		<div>
-			<strong>{{organization}}</strong>
-			({{location}}) {{> date dates}}
+  <script type="text/x-handlebars-template" id="organizationTemplate">
+    <div>
+      <strong>{{organization}}</strong>
+      ({{location}}) {{> date dates}}
 
-			<ul>
-				{{#detail}}
-					<li>{{.}}</li>
-				{{/detail}}
-			</ul>
-		</div>
-	</script>
+      <ul>
+        {{#detail}}
+          <li>{{.}}</li>
+        {{/detail}}
+      </ul>
+    </div>
+  </script>
 
-	<script type="text/x-handlebars-template" id="projectTemplate">
-		<div>
-			<strong>{{project}}</strong>
-			{{#if role}}({{role}}){{/if}}
-			&#8209;
-			<a href="{{url}}" target="_blank" class="link">{{url}}</a> {{> date dates}}
+  <script type="text/x-handlebars-template" id="projectTemplate">
+    <div>
+      <strong>{{project}}</strong>
+      {{#if role}}({{role}}){{/if}} &#8209;
+      <a href="{{url}}" target="_blank" class="link">{{url}}</a> {{> date dates}}
 
-			<ul>
-				{{#detail}}
-					<li>{{.}}</li>
-				{{/detail}}
-			</ul>
-		</div>
-	</script>
+      <ul>
+        {{#detail}}
+          <li>{{.}}</li>
+        {{/detail}}
+      </ul>
+    </div>
+  </script>
 
-	<script type="text/x-handlebars-template" id="skillTemplate">
-		<strong>{{type}}:</strong>
-		{{#contents}}
-			{{this}}{{#unless @last}},{{/unless}}
-		{{/contents}}
-		<br>
-	</script>
+  <script type="text/x-handlebars-template" id="skillTemplate">
+    <strong>{{type}}:</strong>
+    {{#contents}}
+      {{this}}{{#unless @last}},{{/unless}}
+    {{/contents}}
+    <br>
+  </script>
 
-	<script type="text/x-handlebars-template" id="schoolTemplate">
-		<div>
-			<strong>{{school}}</strong>
-			({{location}}) {{> date dates}}
+  <script type="text/x-handlebars-template" id="schoolTemplate">
+    <div>
+      <strong>{{school}}</strong>
+      ({{location}}) {{> date dates}}
 
-			{{#degree}}
-				<br> {{#if present}}{{progress}}{{/if}} {{level}} of {{type}} in
-				<strong>{{name}}</strong>
-				{{#if concentrations}}
-					concentrating in
-					{{#concentrations}}
-						<strong>{{this}}</strong>
-						{{#unless @last}}
-							and
-						{{/unless}}
-					{{/concentrations}}
-				{{/if}}
-			{{/degree}}
+      {{#degree}}
+        <br> {{#if present}}{{progress}}{{/if}} {{level}} of {{type}} in
+        <strong>{{name}}</strong>
+        {{#if concentrations}}
+          concentrating in
+          {{#concentrations}}
+            <strong>{{this}}</strong>
+            {{#unless @last}}
+              and
+            {{/unless}}
+          {{/concentrations}}
+        {{/if}}
+      {{/degree}}
 
-			{{#if gpa}}
-				<br> Overall GPA:
-				<strong>{{formatGPA gpa}}</strong>
-			{{/if}}
+      {{#if gpa}}
+        <br> Overall GPA:
+        <strong>{{formatGPA gpa}}</strong>
+      {{/if}}
 
-			{{#if dates.present}}
-				<br> Expected Graduation:
-				<strong>{{dates.end.month}} {{dates.end.year}}</strong>
-				{{#compare gpa ">=" 3.55}}
-					with
-					<strong>Highest Honors</strong>
-			{{else}}
-				{{#compare gpa ">=" 3.35}}
-					with
-					<strong>High Honors</strong>
-			{{else}}
-				{{#compare gpa ">=" 3.15}}
-					with
-					<strong>Honors</strong>
-				{{/compare}}
-				{{/compare}}
-				{{/compare}}
-			{{/if}}
+      {{#if dates.present}}
+        <br> Expected Graduation:
+        <strong>{{dates.end.month}} {{dates.end.year}}</strong>
+        {{#compare gpa ">=" 3.55}}
+          with
+          <strong>Highest Honors</strong>
+      {{else}}
+        {{#compare gpa ">=" 3.35}}
+          with
+          <strong>High Honors</strong>
+      {{else}}
+        {{#compare gpa ">=" 3.15}}
+          with
+          <strong>Honors</strong>
+        {{/compare}}
+        {{/compare}}
+        {{/compare}}
+      {{/if}}
 
-			{{#if honors.program}}
-				<br>
-				<strong>Honors Program</strong>
-			{{/if}}
+      {{#if honors.program}}
+        <br>
+        <strong>Honors Program</strong>
+      {{/if}}
 
-			{{#if honors.faculty}}
-				<br>
-				<strong>Faculty Honors</strong>
-			{{/if}}
+      {{#if honors.faculty}}
+        <br>
+        <strong>Faculty Honors</strong>
+      {{/if}}
 
-			{{#unless @last}}
-				<br>
-				<br>
-			{{/unless}}
-		</div>
-	</script>
+      {{#unless @last}}
+        <br>
+        <br>
+      {{/unless}}
+    </div>
+  </script>
 </body>
 
 </html>
