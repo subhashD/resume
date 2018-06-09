@@ -102,23 +102,24 @@
 					},
 					"detail" : [
 						{
-							"summary": "Designed, developed, and deployed ClearIP fraud detection platform",
+							"summary": "Designed, developed deployed, and maintained ClearIP VoIP management and protection platform",
 							"details": [
 								"Application provides real time fraud detection and prevention with near linear scalability",
 								"Served as architect and lead developer on project",
-								"Developed SIP fraud analysis system written in Node.js with Redis for storage",
-								"Developed RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
+								"Developed distrubuted, stateless SIP server written in JavaScript using Node.js with Redis for storage",
+								"Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
 								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
-								"Deployed applications with HashiCorp Packer, AWS Elastic Beanstalk, and AWS S3 on Amazon Web Services"
+								"Deployed applications with HashiCorp Packer, AWS Elastic Beanstalk, and AWS S3"
 							]
 						},
 						{
-							"summary": "Designed, developed, and deployed TransNexus Administration Portal",
+							"summary": "Designed, developed, deployed, and maintained TransNexus Administration Portal",
 							"details": [
 								"Application provides web interface and API for managing customers' software",
-								"Developed RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
+								"Served as architect and lead developer on project",
+								"Developed distrubuted, stateless RESTful API written in JavaScript using Sails.js and Node.js with MySQL for storage",
 								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap",
-								"Deployed applications with Elastic Beanstalk and S3 on Amazon Web Services"
+								"Deployed applications with AWS Elastic Beanstalk and AWS S3"
 							]
 						},
 						{
@@ -127,14 +128,6 @@
 								"Replaced existing Java web application with JavaScript web application",
 								"Developed RESTful API written in JavaScript using Sails.js and Node.js",
 								"Developed web interface written in JavaScript using Ember.js, jQuery, and Bootstrap"
-							]
-						},
-						{
-							"summary": "Developed and deployed new responsive company and support websites",
-							"details": [
-								"Partnered with marketing department to design websites",
-								"Developed websites using Hugo, Grav, Javascript, HTML, and CSS",
-								"Deployed websites with S3, PHP-FPM, and NGINX on Amazon Web Services"
 							]
 						}
 					]
@@ -284,6 +277,26 @@
 			"type" : "projects",
 			"data" : [
 				{
+					"project" : "Ember Simple Auth Token",
+					"role" : "contributor",
+					"url" : "https://github.com/jpadilla/ember-simple-auth-token",
+					"dates" : {
+						"start" : {
+							"month" : "May",
+							"year" : 2018
+						},
+						"end" : {
+							"month" : "",
+							"year" : null
+						},
+						"present" : true,
+						"alternating" : false
+					},
+					"detail" : [
+						"Ember Simple Auth extension for token based authentication including JSON web tokens"
+					]
+				},
+				{
 					"project" : "BQueue",
 					"url" : "https://github.com/fenichelar/BQueue",
 					"dates" : {
@@ -323,6 +336,7 @@
 				},
 				{
 					"project" : "Too Many Lasers",
+					"role" : "contributor",
 					"url" : "https://github.com/fenichelar/Too-Many-Lasers",
 					"dates" : {
 						"start" : {
