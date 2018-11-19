@@ -230,9 +230,9 @@
           "type": "Programming Languages",
           "contents": [
             "JavaScript (advanced)",
-            "C/C++ (moderate)",
             "Python (moderate)",
-            "MATLAB (moderate)"
+            "MATLAB (moderate)",
+            "C/C++ (basic)"
           ]
         },
         {
@@ -251,7 +251,8 @@
           "type": "Databases",
           "contents": [
             "Redis",
-            "MySQL"
+            "MySQL",
+            "Amazon Redshift"
           ]
         },
         {
@@ -268,7 +269,7 @@
             "CloudFront",
             "IAM",
             "Route 53",
-            "Cloud Watch",
+            "CloudWatch",
             "Elastic Beanstalk"
           ]
         }
