@@ -3,7 +3,7 @@ function shortenDate(input) {
   if (isNaN(input)) {
     return input.substr(0,3);
   }
-
+  
   return "'" + input.toString().substr(2,2);
 }
 

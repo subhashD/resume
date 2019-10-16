@@ -1,6 +1,6 @@
-if ((location.protocol != "https:") && (location.hostname != "resume.localhost") && (location.hostname != "localhost") && (location.hostname != "127.0.0.1")) {
-  location.protocol = "https:";
-}
+// if ((location.protocol != "https:") && (location.hostname != "resume.localhost") && (location.hostname != "localhost") && (location.hostname != "127.0.0.1")) {
+//   location.protocol = "https:";
+// }
 
 $(document).ready(function() {
 
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     // Output error status on failure to load JSON
     .fail(function(jqXHR, textStatus, errorThrown) {
-      console.log("Error: " + textStatus);
+      console.log("Error: " + errorThrown);
     });
 
   });

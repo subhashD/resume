@@ -21,7 +21,7 @@
 
   <script type="text/x-handlebars-template" id="template">
     <div class="header">
-      <div id="links" class="left">
+      <div id="links" class="left no-visible">
         <h3>
           {{#links}}
             <a href="{{.}}" target="_blank" class="link">{{.}}</a>
@@ -34,6 +34,25 @@
         <h2>
           {{name}}
         </h2>
+      </div>
+
+      <div id="contact" class="right  no-visible">
+        <h3>
+          <a href="tel:{{formatPhone telephone}}">{{telephone}}</a>
+          <br>
+          <a href="mailto:{{email}}">{{email}}</a>
+        </h3>
+      </div>
+    </div>
+
+    <div class="clear">
+      <div id="links" class="left">
+        <h3>
+          {{#links}}
+            <a href="{{.}}" target="_blank" class="link">{{.}}</a>
+            <br>
+          {{/links}}
+        </h3>
       </div>
 
       <div id="contact" class="right">
@@ -153,7 +172,7 @@
       ({{location}}) {{> date dates}}
 
       {{#degree}}
-        <br> {{#if present}}{{progress}}{{/if}} {{level}} of {{type}} in
+        <br> {{#if present}}{{progress}}{{/if}} {{level}} {{#if type}} of {{type}} {{/if}} in
         <strong>{{name}}</strong>
         {{#if concentrations}}
           concentrating in

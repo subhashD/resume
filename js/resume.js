@@ -1,6 +1,6 @@
-if ((location.protocol != "https:") && (location.hostname != "resume.localhost") && (location.hostname != "localhost") && (location.hostname != "127.0.0.1")) {
-  location.protocol = "https:";
-}
+// if ((location.protocol != "https:") && (location.hostname != "resume.localhost") && (location.hostname != "localhost") && (location.hostname != "127.0.0.1")) {
+//   location.protocol = "https:";
+// }
 
 $(document).ready(function() {
 
@@ -47,6 +47,7 @@ $(document).ready(function() {
       $("h3").css("fontSize", data.layout.html.size.titles);
       $("div").css("fontSize", data.layout.html.size.paragraph);
       $("li").css("fontSize", data.layout.html.size.details);
+      // $("#name").css("display", "contents");
       $("#headerColumns").css("fontSize", data.layout.html.size.header);
 
       // Set page title

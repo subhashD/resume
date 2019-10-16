@@ -76,3 +76,11 @@ li {
 .clear {
   clear: both;
 }
+
+.name-center {
+  display: contents !important;
+}
+
+.no-visible {
+  visibility: hidden;
+}
