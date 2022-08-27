@@ -59,11 +59,11 @@
           },
           "detail": [
             {
-              "summary": "Added new features and improved the existing in the system ",
+              "summary": "Added new features and improved the existing features in the system ",
               "details": [
                 "Worked much on Automating the manual taks done on the system.",
                 "Made changes to sending emails from Application using the queue.",
-                "Understading the new requirements from the client using the App and implementing those in exsiting system."
+                "Understading the new requirements from the client to be done on system and implementing those."
               ]
             },
             {
@@ -149,8 +149,11 @@
         {
           "type": "Web Frameworks",
           "contents": [
-            "Node.js",
+            "Node Js",
+            "Express Js",
+            "ReactJs",
             "Material UI",
+            "Zend",
             "Laravel",
             "Handlebars",
             "jQuery",
@@ -166,10 +169,23 @@
           ]
         },
         {
+          "type": "Databases Mappers",
+          "contents": [
+            "Doctrine ORM and ODM (along with use of unitOfWork)",
+            "Mongoose",
+            "Sequelize"
+          ]
+        },
+        {
           "type": "AWS",
           "contents": [
             "EC2",
             "S3"
+          ]
+        }, {
+          "type": "Third Party Intregations",
+          "contents": [
+            "MS Graph API"
           ]
         }
       ]
@@ -246,7 +262,7 @@
       "data": [
         {
           "project": "ShortMe",
-          "role": "contributor",
+          "role": "owner",
           "url": "https://github.com/subhashD/shortMe",
           "dates": {
             "start": {
