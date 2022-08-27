@@ -34,7 +34,7 @@
       "title": "Summary",
       "type": "paragraph",
       "data": [
-        "Motivated developer with experience creating custom websites through Laravel and Javascript and maintaining production applications on AWS. Strong collaboration skills and proven history of application development."
+        "Motivated developer with experience creating custom webapps through PHP, Laravel and Javascript and maintaining production applications. Strong collaboration skills and proven history of application development."
       ]
     },
     {
@@ -42,6 +42,39 @@
       "type": "experience",
       "data": [
         {
+          "company": "QS Quacquarelli Symonds",
+          "position": "Software Engineer",
+          "location": "Bangalore, IN",
+          "dates": {
+            "start": {
+              "month": "November",
+              "year": 2020
+            },
+            "end": {
+              "month": "",
+              "year": ""
+            },
+            "present": true,
+            "alternating": false
+          },
+          "detail": [
+            {
+              "summary": "Added new features and improved the existing in the system ",
+              "details": [
+                "Worked much on Automating the manual taks done on the system.",
+                "Made changes to sending emails from Application using the queue.",
+                "Understading the new requirements from the client using the App and implementing those in exsiting system."
+              ]
+            },
+            {
+              "summary": "Designed and Developed OAUTH setup intregating Microsoft Graph API",
+              "details": [
+                "Implemented it in a way to use in the existing setup of email to send emails"
+              ]
+            },
+            "Worked independently on many of the new features."
+          ]
+        },{
           "company": "Atulsia Technologies pvt. ltd.",
           "position": "Web Developer",
           "location": "Mumbai, IN",
@@ -107,6 +140,7 @@
         {
           "type": "Programming Languages",
           "contents": [
+            "ReactJs",
             "PHP",
             "JavaScript",
             "CSS"
@@ -115,8 +149,9 @@
         {
           "type": "Web Frameworks",
           "contents": [
-            "Laravel",
             "Node.js",
+            "Material UI",
+            "Laravel",
             "Handlebars",
             "jQuery",
             "Bootstrap"
@@ -126,7 +161,8 @@
           "type": "Databases",
           "contents": [
             "MySQL",
-            "MongoDB (basic)"
+            "Firebase",
+            "MongoDB"
           ]
         },
         {
@@ -209,6 +245,25 @@
       "type": "projects",
       "data": [
         {
+          "project": "ShortMe",
+          "role": "contributor",
+          "url": "https://github.com/subhashD/shortMe",
+          "dates": {
+            "start": {
+              "month": "August",
+              "year": 2020
+            },
+            "end": {
+              "month": "August",
+              "year": 2020
+            },
+            "present": false,
+            "alternating": false
+          },
+          "detail": [
+            "ShortMe is simple web application for generating short urls by providing large and managing them in the given dashboard written in Laravel"
+          ]
+        }, {
           "project": "Stock Management",
           "role": "contributor",
           "url": "https://github.com/subhashD/stock-management",
