@@ -84,10 +84,10 @@
               "year": 2018
             },
             "end": {
-              "month": "",
-              "year": ""
+              "month": "November",
+              "year": "2020"
             },
-            "present": true,
+            "present": false,
             "alternating": false
           },
           "detail": [
